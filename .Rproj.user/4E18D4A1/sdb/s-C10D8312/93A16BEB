@@ -1,0 +1,28 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1472156211221.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "93A16BEB",
+    "lastKnownWriteTime" : 7308604914264011873,
+    "last_content_update" : 1472156211221,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "cacheKey" : "zgwesj2w2e",
+        "caption" : "Grandtotal",
+        "contentUrl" : "grid_resource/gridviewer.html?env=&obj=Grandtotal&cache_key=zgwesj2w2e",
+        "displayedObservations" : 123,
+        "environment" : "",
+        "object" : "Grandtotal",
+        "totalObservations" : 123,
+        "variables" : 110
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_dataframe"
+}

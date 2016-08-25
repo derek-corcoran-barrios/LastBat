@@ -1,4 +1,4 @@
-setwd("C:/Users/corcoranbarriosd/Documents/LastBat")
+setwd("C:/Users/corcoranbarriosd/Documents/LastBat/Audiob2016")
 
 
 ###list og batchsummaryfiles
