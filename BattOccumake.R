@@ -1,4 +1,4 @@
-setwd("C:/Users/corcoranbarriosd/Documents/Jacqui/Audiob2016")
+setwd("C:/Users/corcoranbarriosd/Documents/LastBat")
 
 
 ###list og batchsummaryfiles
@@ -133,7 +133,7 @@ total <- merge(total,RESULTS,by="ID", all = TRUE)
 ######TempHum
 
 
-setwd("C:/Users/corcoranbarriosd/Documents/Jacqui/T&H")
+setwd("C:/Users/corcoranbarriosd/Documents/LastBat/T&H")
 #get the name of all humidity files
 Humname <- list.files(pattern="*Hum.csv")
 #read all the humidity files
@@ -152,7 +152,7 @@ Temname <- gsub("Tem.csv",x =  Temname, "")
 for (i in 1:length(Temfiles)){
   Temfiles[[i]]$ID <- rep(Temname[i], times = nrow(Temfiles[[i]]))
 }
-setwd("C:/Users/corcoranbarriosd/Documents/Jacqui")
+setwd("C:/Users/corcoranbarriosd/Documents/LastBat")
 
 
 ####Get your dates right
