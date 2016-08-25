@@ -1,0 +1,13 @@
+	Myyu	Myca	Myci	Myvo	Mylu	Pahe	Labl	Myev	Anpa	Epfu	Lano	Myth	Tabr	Laci	Coto	Euma	Eupe
+Consensus count																	
+Corrected count																	
+																	
+likelihood of presence	0	0.98	0	0	0.55	0	0	0	0	0	0.23	0	0	0.32	0	0	0
+MLE	1	0.02	1	1	0.45	1	1	1	1	1	0.78	1	1	0.68	1	1	1
+																	
+ByVote count	0	6	0	0	1	0	0	0	0	0	2	0	0	1	0	0	0
+MeanClssn count	2	8	1	0	1	0	0	0	0	1	2	0	0	1	0	0	0
+																	
+HiF sum	61																
+LoF sum	64																
+total est. passes	125																
