@@ -50,8 +50,9 @@ Grandtotal <- Grandtotal[,-1]
 
 sampling.cov<- Grandtotal[,53:83]
 sampling.cov <- sampling.cov[,-c(7,8,17:22)]
-preprocov <-preProcess(sampling.cov, method = c("center","scale"))
-sampling.cov<-predict(preprocov, sampling.cov)
+#This next step changes according to the models
+preprocov <-preProcess(sampling.cov[,15:23], method = c("center","scale"))
+sampling.cov<-predict(preprocov, sampling.cov[,15:23])
 
 Dailycov <- Grandtotal[,84:110]
 
@@ -76,49 +77,52 @@ names(Dailycov) <- c("Julian", "Maxhum","Maxtemp","Meanhum", "Meantemp","Minhum"
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
 
-plot(Predictors)
-#Pred.DF<-as.data.frame(Predictors)
-#Pred.DF<-predict(preprocov, new=Pred.DF)
+Pred.DF<-as.data.frame(Predictors)
 
-#Distance.to.water <- PNF  # this will be the template
-#Distance.to.water[] <- NA 
-#values(Distance.to.water)<-Pred.DF[,1]
 
-#Distance.to.road <- PNF  # this will be the template
-#Distance.to.road[] <- NA 
-#values(Distance.to.road)<-Pred.DF[,2]
+Pred.DF<-predict(preprocov, new=Pred.DF)
 
-#Existing.vegetation <- PNF  # this will be the template
-#Existing.vegetation[] <- NA 
-#values(Existing.vegetation)<-Pred.DF[,3]
+Distance.to.water <- Predictors[[1]]  # this will be the template
+Distance.to.water[] <- NA 
+values(Distance.to.water)<-Pred.DF[,1]
 
-#Altitude <- PNF  # this will be the template
-#Altitude[] <- NA 
-#values(Altitude)<-Pred.DF[,4]
+Distance.to.road <- Predictors[[1]]  # this will be the template
+Distance.to.road[] <- NA 
+values(Distance.to.road)<-Pred.DF[,2]
+
+Existing.vegetation <- Predictors[[1]]  # this will be the template
+Existing.vegetation[] <- NA 
+values(Existing.vegetation)<-Pred.DF[,3]
+
+Altitude <- Predictors[[1]]  # this will be the template
+Altitude[] <- NA 
+values(Altitude)<-Pred.DF[,4]
      
-#Burn.intensity.soil <- PNF  # this will be the template
-#Burn.intensity.soil[] <- NA 
-#values(Burn.intensity.soil)<-Pred.DF[,5]
+Burn.intensity.soil <- Predictors[[1]]  # this will be the template
+Burn.intensity.soil[] <- NA 
+values(Burn.intensity.soil)<-Pred.DF[,5]
 
-#Burn.intensity.Canopy <- PNF  # this will be the template
-#Burn.intensity.Canopy[] <- NA 
-#values(Burn.intensity.Canopy)<-Pred.DF[,6]
+Burn.intensity.Canopy <- Predictors[[1]]  # this will be the template
+Burn.intensity.Canopy[] <- NA 
+values(Burn.intensity.Canopy)<-Pred.DF[,6]
 
-#Burn.intensity.basal <- PNF  # this will be the template
-#Burn.intensity.basal[] <- NA 
-#values(Burn.intensity.basal)<-Pred.DF[,7]
+Burn.intensity.basal <- Predictors[[1]]  # this will be the template
+Burn.intensity.basal[] <- NA 
+values(Burn.intensity.basal)<-Pred.DF[,7]
 
-#fire_dist <- PNF  # this will be the template
-#fire_dist[] <- NA 
-#values(fire_dist)<-Pred.DF[,8]
+fire_dist <- Predictors[[1]]  # this will be the template
+fire_dist[] <- NA 
+values(fire_dist)<-Pred.DF[,8]
 
-#forest_dist <- PNF  # this will be the template
-#forest_dist[] <- NA 
-#values(forest_dist)<-Pred.DF[,9]
+forest_dist <- Predictors[[1]]  # this will be the template
+forest_dist[] <- NA 
+values(forest_dist)<-Pred.DF[,9]
 
-#Predictors <-stack(Distance.to.water, Distance.to.road, Existing.vegetation, Altitude, Burn.intensity.soil,Burn.intensity.Canopy, Burn.intensity.basal, fire_dist, forest_dist)
-#names(Predictors)<-c("Distance to water", "Distance to road","Existing vegetation","Altitude", "Burn intensity soil","Burn intensity Canopy", "Burn intensity basal", "fire_dist", "forest_dist")
+Predictors <-stack(Distance.to.water, Distance.to.road, Existing.vegetation, Altitude, Burn.intensity.soil,Burn.intensity.Canopy, Burn.intensity.basal, fire_dist, forest_dist)
+names(Predictors)<-c("Distance to water", "Distance to road","Existing vegetation","Altitude", "Burn intensity soil","Burn intensity Canopy", "Burn intensity basal", "fire_dist", "forest_dist")
 
+
+plot(Predictors)
 ```
 
 #Results collected in the field 
@@ -164,7 +168,7 @@ BatOccu <- Grandtotal[,2:52]
 library(unmarked)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="hide"}
 #N=49a
 BatOccuMyYu<-BatOccu[,2:4]
 
@@ -186,12 +190,15 @@ select.My.Yu2 <- dredge(model.Occu1.My.Yu2, rank = "AICc", subset= !(
 `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)`)
 
 best2.My.Yu2<-get.models(select.My.Yu2, 1)[[1]]
-#Occu1.layer.MyYu2 <- predict(best2.My.Yu2, type = "state", newdata=Predictors)
+Occu1.layer.MyYu2 <- predict(best2.My.Yu2, type = "state", newdata=Predictors)
 
-#brks= c(0, 0.1, 0.2, 0.3, 0.4,0.5, 0.6,0.7, 0.8,0.9, 1)
-#cols <- rev(terrain.colors(10))
-#Occu1.layer.MyYu2<-Occu1.layer.MyYu2*PNF
-#plot(Occu1.layer.MyYu2$layer.1, colNA="black", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
+brks= c(0, 0.1, 0.2, 0.3, 0.4,0.5, 0.6,0.7, 0.8,0.9, 1)
+cols <- rev(terrain.colors(10))
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+
+plot(Occu1.layer.MyYu2$Predicted, colNA="black", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
 
 #library(texreg)
 htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)), file = "myyu.doc")
