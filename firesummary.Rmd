@@ -1,0 +1,200 @@
+---
+title: "Firesummary"
+author: "Derek Corcoran"
+date: "August 25, 2016"
+output: html_document
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE)
+```
+
+#Abstract
+
+This webpage will show the results of a bat survey study done in the Plumas National Forest in North California. The objective of this study is to determine the distribution of the different species of bats within the park. In order to do that we have performed occupancy models for the species present in the park. The results of this models will be shown as maps showing the probability of occurence of bats in each point, that is, if you see a value of 1, there is a 100% chance of finding a bat in that point, if there is a value of 0 there is 0% chance of finding that specie in that point, if there is a value of 0.5 there is a 50% chance of finding that specie in that point.
+
+Another result
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE,results='hide'}
+#first load libraries
+library(raster)
+library(rasterVis)
+library(maps)
+library(maptools)
+library(rgdal)
+library(latticeExtra)
+library(dplyr)
+library(knitr)
+library(unmarked)
+library(lubridate)
+library(jpeg)
+library(stargazer)
+library(xtable)
+library(MuMIn)
+library(ggplot2)
+library(RCurl)
+library(foreign)
+library(caret)
+library(AICcmodavg)
+```
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE,results='hide', cache=TRUE}
+Predictors<- readRDS("Predictors_Stack.rds")
+plot(Predictors)
+```
+
+```{r,echo=FALSE, warning=FALSE,message=FALSE}
+Grandtotal <- read.csv("~/LastBat/Grandtotal.csv")
+Grandtotal <- Grandtotal[,-1]
+
+sampling.cov<- Grandtotal[,53:83]
+sampling.cov <- sampling.cov[,-c(7,8,17:22)]
+preprocov <-preProcess(sampling.cov, method = c("center","scale"))
+sampling.cov<-predict(preprocov, sampling.cov)
+
+Dailycov <- Grandtotal[,84:110]
+
+
+preproDaily <-preProcess(Dailycov, method = c("center","scale"))
+Dailycov<-predict(preproDaily, Dailycov)
+
+Julian<-Dailycov[,1:3]
+Max.hum<-Dailycov[,4:6]
+Max.temp<-Dailycov[,7:9]
+Mean.hum<-Dailycov[,10:12]
+Mean.temp<-Dailycov[,13:15]
+Min.hum<-Dailycov[,16:18]
+Min.temp<-Dailycov[,19:21]
+Sd.hum<-Dailycov[,22:24]
+Sd.temp<-Dailycov[,25:27]
+
+Dailycov<- list(Julian,Max.hum, Max.temp, Mean.hum,Mean.temp, Min.hum, Min.temp, Sd.hum, Sd.temp)
+names(Dailycov) <- c("Julian", "Maxhum","Maxtemp","Meanhum", "Meantemp","Minhum","Mintemp","sdhum","sdtemp")
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+plot(Predictors)
+#Pred.DF<-as.data.frame(Predictors)
+#Pred.DF<-predict(preprocov, new=Pred.DF)
+
+#Distance.to.water <- PNF  # this will be the template
+#Distance.to.water[] <- NA 
+#values(Distance.to.water)<-Pred.DF[,1]
+
+#Distance.to.road <- PNF  # this will be the template
+#Distance.to.road[] <- NA 
+#values(Distance.to.road)<-Pred.DF[,2]
+
+#Existing.vegetation <- PNF  # this will be the template
+#Existing.vegetation[] <- NA 
+#values(Existing.vegetation)<-Pred.DF[,3]
+
+#Altitude <- PNF  # this will be the template
+#Altitude[] <- NA 
+#values(Altitude)<-Pred.DF[,4]
+     
+#Burn.intensity.soil <- PNF  # this will be the template
+#Burn.intensity.soil[] <- NA 
+#values(Burn.intensity.soil)<-Pred.DF[,5]
+
+#Burn.intensity.Canopy <- PNF  # this will be the template
+#Burn.intensity.Canopy[] <- NA 
+#values(Burn.intensity.Canopy)<-Pred.DF[,6]
+
+#Burn.intensity.basal <- PNF  # this will be the template
+#Burn.intensity.basal[] <- NA 
+#values(Burn.intensity.basal)<-Pred.DF[,7]
+
+#fire_dist <- PNF  # this will be the template
+#fire_dist[] <- NA 
+#values(fire_dist)<-Pred.DF[,8]
+
+#forest_dist <- PNF  # this will be the template
+#forest_dist[] <- NA 
+#values(forest_dist)<-Pred.DF[,9]
+
+#Predictors <-stack(Distance.to.water, Distance.to.road, Existing.vegetation, Altitude, Burn.intensity.soil,Burn.intensity.Canopy, Burn.intensity.basal, fire_dist, forest_dist)
+#names(Predictors)<-c("Distance to water", "Distance to road","Existing vegetation","Altitude", "Burn intensity soil","Burn intensity Canopy", "Burn intensity basal", "fire_dist", "forest_dist")
+
+```
+
+#Results collected in the field 
+
+
+
+#Maps showing the sampled Points
+
+
+#Results of species prescence
+
+In this area 0 means absence, and 1 means prescence. This table has for each site (ID), every specie and day, so for example if Mylu1=0, that means that for *Myotis lucifugus* (common name Little Brown bat, was detected on day one for that particular site).
+
+##Here is a key for bat species
+
+- *Myotis yumanensis* (Myyu)
+- *Myotis californicus* (Myca)
+- *Myotis ciliolabrum* (Myci)
+- *Myotis volans* (Myvo)
+- *Myotis lucifugus* (Mylu)
+- *Parastrellus hesperus* (Pahe)
+- *Lasiurus blossevillii* (Labo)
+- *Myotis evotis* (Myev)
+- *Antrozous pallidus*  **(Anpa)**
+- *Eptesicus fuscus* (Epfu)
+- *Lasionycteris noctivagans* (Lano)
+- *Myotis thysanodes* **(Myth)**
+- *Tadarida brasiliensis* (Tabr)
+- *Lasiurus cinereus* (Laci)
+- *Corynorhinus townsendii* **(Coto)**
+- *Euderma maculatum* (Euma)
+- *Eumops perotis* (Eupe)
+
+```{r,echo=FALSE, warning=FALSE,message=FALSE}
+BatOccu <- Grandtotal[,2:52]
+```
+
+#Maps predicting the distribution of bats
+
+##Yuma myotis (*Myotis yumanensis*)
+
+```{r, echo=FALSE,message=FALSE}
+library(unmarked)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+#N=49a
+BatOccuMyYu<-BatOccu[,2:4]
+
+SimOccuMyYu2<-unmarkedFrameOccu(y = BatOccuMyYu, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+# Fit model with psi held constant
+model.Occu1.My.Yu2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuMyYu2)
+
+select.My.Yu2 <- dredge(model.Occu1.My.Yu2, rank = "AICc")
+library(texreg)
+htmlreg(extract(subset(select.My.Yu2, delta <= 1, recalc.weights = FALSE)))
+
+model.Occu1.My.Yu2 <- occu(~ Meantemp ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist,SimOccuMyYu2)
+
+select.My.Yu2 <- dredge(model.Occu1.My.Yu2, rank = "AICc", subset= !(  
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)`)
+
+best2.My.Yu2<-get.models(select.My.Yu2, 1)[[1]]
+#Occu1.layer.MyYu2 <- predict(best2.My.Yu2, type = "state", newdata=Predictors)
+
+#brks= c(0, 0.1, 0.2, 0.3, 0.4,0.5, 0.6,0.7, 0.8,0.9, 1)
+#cols <- rev(terrain.colors(10))
+#Occu1.layer.MyYu2<-Occu1.layer.MyYu2*PNF
+#plot(Occu1.layer.MyYu2$layer.1, colNA="black", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
+
+#library(texreg)
+htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)), file = "myyu.doc")
+
+htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)))
+```
