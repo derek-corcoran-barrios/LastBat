@@ -41,7 +41,8 @@ library(AICcmodavg)
 
 ```{r,echo=FALSE,warning=FALSE,message=FALSE,results='hide', cache=TRUE}
 Predictors<- readRDS("Predictors_Stack.rds")
-plot(Predictors)
+PNF <- readRDS("PNF.rds")
+
 ```
 
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
@@ -271,9 +272,9 @@ Occu1.layer.MyCi2 <- predict(best2.My.Ci2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
-
+PNF <- readRDS("PNF.rds")
 Occu1.layer.MyCi<-Occu1.layer.MyCi2
-plot(Occu1.layer.MyCi$Predicted, colNA="black", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyCi$Predicted*PNF, colNA="black", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Ci2, delta <= 2, recalc.weights = TRUE)))
@@ -357,4 +358,45 @@ Occu1.layer.MyLu2<-Occu1.layer.MyLu2
 plot(Occu1.layer.MyLu2$Predicted, colNA="black", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
+```
+
+
+##Western Red Bat (*Lasiurus blossevillii*)
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+
+BatOccuLaBl<-BatOccu[,20:22]
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+
+SimOccuLaBl2<-unmarkedFrameOccu(y = BatOccuLaBl, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+model.Occu1.La.Bl2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuLaBl2)
+
+select.La.Bl2 <- dredge(model.Occu1.La.Bl2, rank = "AICc")
+
+htmlreg(extract(subset(select.La.Bl2, delta <= 2, recalc.weights = TRUE)))
+
+model.Occu1.La.Bl2 <- occu(~ sdhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuLaBl2)
+
+select.La.Bl2 <- dredge(model.Occu1.La.Bl2, rank = "AICc", subset= !(  
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(sdhum)`)
+
+best2.La.Bl2<-get.models(select.La.Bl2, 1)[[1]]
+Occu1.layer.LaBl2 <- predict(best2.La.Bl2, type = "state", newdata=Predictors)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+
+Occu1.layer.LaBl2<-Occu1.layer.LaBl2
+plot(Occu1.layer.LaBl2$Predicted*PNF, colNA="black", main="Occupancy estimation for Western Red Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+library(texreg)
+htmlreg(extract(subset(select.La.Bl2, delta <= 2, recalc.weights = TRUE)))
 ```
