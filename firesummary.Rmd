@@ -205,3 +205,156 @@ htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)), file 
 
 htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)))
 ```
+
+##California bat (*Myotis californicus*)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+#N=49
+BatOccuMyCa<-BatOccu[,5:7]
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="hide"}
+
+SimOccuMyCa2<-unmarkedFrameOccu(y = BatOccuMyCa, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+model.Occu1.My.Ca2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuMyCa2)
+
+select.My.Ca2 <- dredge(model.Occu1.My.Ca2, rank = "AICc")
+
+model.Occu1.My.Ca2 <- occu(~ sdtemp ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuMyCa2)
+
+select.My.Ca2 <- dredge(model.Occu1.My.Ca2, rank = "AICc", subset= !(
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(sdtemp)`)
+
+best2.My.Ca2<-get.models(select.My.Ca2, 1)[[1]]
+Occu1.layer.MyCa2 <- predict(best2.My.Ca2, type = "state", newdata=Predictors)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+Occu1.layer.MyCa<-Occu1.layer.MyCa2
+plot(Occu1.layer.MyCa$Predicted, colNA="black", main="Occupancy estimation for California Bat",breaks=brks, col=cols,lab.breaks=brks, zlim=c(0,1))
+library(texreg)
+htmlreg(extract(subset(select.My.Ca2, delta <= 2, recalc.weights = TRUE)))
+```
+
+
+##Western Small Footed Myotis (*Myotis ciliolabrum*)
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+#N=49
+BatOccuMyCi<-BatOccu[,8:10]
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+#N=49
+SimOccuMyCi2<-unmarkedFrameOccu(y = BatOccuMyCi, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+model.Occu1.My.Ci2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuMyCi2)
+
+select.My.Ci2 <- dredge(model.Occu1.My.Ci2, rank = "AICc")
+
+model.Occu1.My.Ci2 <- occu(~ Meantemp ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuMyCi2)
+
+select.My.Ci2 <- dredge(model.Occu1.My.Ci2, rank = "AICc", subset= !( 
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Meantemp)`)
+
+best2.My.Ci2<-get.models(select.My.Ci2, 1)[[1]]
+Occu1.layer.MyCi2 <- predict(best2.My.Ci2, type = "state", newdata=Predictors)
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+
+Occu1.layer.MyCi<-Occu1.layer.MyCi2
+plot(Occu1.layer.MyCi$Predicted, colNA="black", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+library(texreg)
+htmlreg(extract(subset(select.My.Ci2, delta <= 2, recalc.weights = TRUE)))
+```
+
+##Hairy-winged bat (*Myotis volans*)
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+BatOccuMyVo<-BatOccu[,11:13]
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+SimOccuMyVo2<-unmarkedFrameOccu(y = BatOccuMyVo, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+model.Occu1.My.Vo2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuMyVo2)
+
+select.My.Vo2 <- dredge(model.Occu1.My.Vo2, rank = "AICc")
+
+#library(texreg)
+#htmlreg(extract(subset(select.My.Vo2, delta <= 2, recalc.weights = TRUE)))
+
+model.Occu1.My.Vo2 <- occu(~ sdhum ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuMyVo2)
+
+select.My.Vo2 <- dredge(model.Occu1.My.Vo2, rank = "AICc", subset= !( 
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`))
+
+best2.My.Vo2<-get.models(select.My.Vo2, 1)[[1]]
+
+Occu1.layer.MyVo2 <- predict(best2.My.Vo2, type = "state", newdata=Predictors)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+
+Occu1.layer.MyVo<-Occu1.layer.MyVo2
+plot(Occu1.layer.MyVo$Predicted, colNA="black", main="Occupancy estimation for Hairy-winged bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+library(texreg)
+htmlreg(extract(subset(select.My.Vo2, delta <= 2, recalc.weights = TRUE)))
+
+```
+
+##Little Brown bat (*Myotis lucifugus*)
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+#N=49
+BatOccuMyLu<-BatOccu[,14:16]
+
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
+SimOccuMyLu2<-unmarkedFrameOccu(y = BatOccuMyLu, siteCovs =sampling.cov, obsCovs=Dailycov)
+
+model.Occu1.My.Lu2 <-  occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp~  1, SimOccuMyLu2)
+
+select.My.Lu2 <- dredge(model.Occu1.My.Lu2, rank = "AICc")
+
+#library(texreg)
+#htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
+
+model.Occu1.My.Lu2 <- occu(~ sdhum ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuMyLu2)
+
+select.My.Lu2 <- dredge(model.Occu1.My.Lu2, rank = "AICc", subset= !(  
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(sdhum)`)
+
+best2.My.Lu2<-get.models(select.My.Lu2, 1)[[1]]
+Occu1.layer.MyLu2 <- predict(best2.My.Lu2, type = "state", newdata=Predictors)
+```
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+library(texreg)
+
+Occu1.layer.MyLu2<-Occu1.layer.MyLu2
+plot(Occu1.layer.MyLu2$Predicted, colNA="black", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
+```

@@ -1,0 +1,140 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<table cellspacing="0" align="center" style="border: none;">
+<caption align="bottom" style="margin-top:0.3em;">Statistical models</caption>
+<tr>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 1</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 2</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 3</b></th>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Int)</td>
+<td style="padding-right: 12px; border: none;">97.21</td>
+<td style="padding-right: 12px; border: none;">82.60</td>
+<td style="padding-right: 12px; border: none;">117.54</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(81.25)</td>
+<td style="padding-right: 12px; border: none;">(83.60)</td>
+<td style="padding-right: 12px; border: none;">(121.59)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Burn.intensity.basal)</td>
+<td style="padding-right: 12px; border: none;">120.12</td>
+<td style="padding-right: 12px; border: none;">103.29</td>
+<td style="padding-right: 12px; border: none;">144.91</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(100.08)</td>
+<td style="padding-right: 12px; border: none;">(102.18)</td>
+<td style="padding-right: 12px; border: none;">(148.63)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(I(Burn.intensity.soil^2))</td>
+<td style="padding-right: 12px; border: none;">-87.36</td>
+<td style="padding-right: 12px; border: none;">-71.22</td>
+<td style="padding-right: 12px; border: none;">-105.76</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(72.77)</td>
+<td style="padding-right: 12px; border: none;">(75.89)</td>
+<td style="padding-right: 12px; border: none;">(109.80)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(forest_dist)</td>
+<td style="padding-right: 12px; border: none;">-41.99</td>
+<td style="padding-right: 12px; border: none;">-36.69</td>
+<td style="padding-right: 12px; border: none;">-50.76</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(35.25)</td>
+<td style="padding-right: 12px; border: none;">(36.50)</td>
+<td style="padding-right: 12px; border: none;">(51.67)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Int)</td>
+<td style="padding-right: 12px; border: none;">-1.13<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-1.10<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-1.13<sup style="vertical-align: 0px;">***</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.21)</td>
+<td style="padding-right: 12px; border: none;">(0.21)</td>
+<td style="padding-right: 12px; border: none;">(0.21)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(sdhum)</td>
+<td style="padding-right: 12px; border: none;">-0.31</td>
+<td style="padding-right: 12px; border: none;">-0.28</td>
+<td style="padding-right: 12px; border: none;">-0.31</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.19)</td>
+<td style="padding-right: 12px; border: none;">(0.20)</td>
+<td style="padding-right: 12px; border: none;">(0.19)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(I(Burn.intensity.basal^2))</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-3.98</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(5.82)</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(fire_dist)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-0.01</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(1.30)</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid black;">Log Likelihood</td>
+<td style="border-top: 1px solid black;">-113.13</td>
+<td style="border-top: 1px solid black;">-112.88</td>
+<td style="border-top: 1px solid black;">-112.95</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">AICc</td>
+<td style="padding-right: 12px; border: none;">239.06</td>
+<td style="padding-right: 12px; border: none;">240.84</td>
+<td style="padding-right: 12px; border: none;">240.98</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Delta</td>
+<td style="padding-right: 12px; border: none;">0.00</td>
+<td style="padding-right: 12px; border: none;">1.78</td>
+<td style="padding-right: 12px; border: none;">1.92</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Weight</td>
+<td style="padding-right: 12px; border: none;">0.56</td>
+<td style="padding-right: 12px; border: none;">0.23</td>
+<td style="padding-right: 12px; border: none;">0.21</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid black;">Num. obs.</td>
+<td style="border-bottom: 2px solid black;">111</td>
+<td style="border-bottom: 2px solid black;">111</td>
+<td style="border-bottom: 2px solid black;">111</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;" colspan="4"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
+</tr>
+</table>
