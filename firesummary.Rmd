@@ -451,7 +451,7 @@ BatOccuAnPa<-BatOccu[,25:27]
 
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='asis'}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
 
 SimOccuAnPa2<-unmarkedFrameOccu(y = BatOccuAnPa, siteCovs =sampling.cov, obsCovs=Dailycov)
@@ -479,7 +479,7 @@ Occu1.layer.AnPa2 <- predict(best2.An.Pa2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.AnPa2<-Occu1.layer.AnPa2
-plot(Occu1.layer.AnPa2$Predicted, colNA="black", main="Occupancy estimation for Pallid Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.AnPa2$Predicted*PNF, colNA="black", main="Occupancy estimation for Pallid Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.An.Pa2, delta <= 2, recalc.weights = TRUE)))
@@ -562,7 +562,7 @@ Occu1.layer.CoTo2 <- predict(best2.Co.To2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.CoTo2<-Occu1.layer.CoTo2
-plot(Occu1.layer.CoTo2$Predicted, colNA="black", main="Occupancy estimation for Townsend big eared bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.CoTo2$Predicted*PNF, colNA="black", main="Occupancy estimation for Townsend big eared bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 
 htmlreg(extract(subset(select.Co.To2, delta <= 2, recalc.weights = TRUE)))
@@ -574,7 +574,7 @@ htmlreg(extract(subset(select.Co.To2, delta <= 2, recalc.weights = TRUE)))
 BatOccuPaHe<-BatOccu[,16:18]
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='asis'}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 SimOccuPaHe2<-unmarkedFrameOccu(y = BatOccuPaHe, siteCovs =sampling.cov, obsCovs=Dailycov)
 
 model.Occu1.Pa.He2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuPaHe2)
