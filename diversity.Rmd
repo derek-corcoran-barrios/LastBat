@@ -1,0 +1,78 @@
+---
+title: "Diversityoccupancy bats"
+author: "Derek Corcoran"
+date: "August 29, 2016"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(cache=FALSE)
+```
+
+#Abstract
+
+This webpage will show the results of a bat survey study done in the Plumas National Forest in North California. The objective of this study is to determine the distribution of the different species of bats within the park. In order to do that we have performed occupancy models for the species present in the park. The results of this models will be shown as maps showing the probability of occurence of bats in each point, that is, if you see a value of 1, there is a 100% chance of finding a bat in that point, if there is a value of 0 there is 0% chance of finding that specie in that point, if there is a value of 0.5 there is a 50% chance of finding that specie in that point.
+
+Another result
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE,results='hide'}
+#first load libraries
+library(raster)
+library(rasterVis)
+library(maps)
+library(maptools)
+library(rgdal)
+library(caret)
+library(DiversityOccupancy)
+```
+
+```{r,echo=FALSE,warning=FALSE,message=FALSE,results='hide', cache=TRUE}
+Predictors <- readRDS("Predictors_Stack.rds")
+plot(Predictors)
+```
+
+```{r,echo=FALSE, warning=FALSE,message=FALSE}
+Grandtotal <- read.csv("~/LastBat/Grandtotal.csv")
+Grandtotal <- Grandtotal[,-1]
+
+sampling.cov<- Grandtotal[,53:83]
+sampling.cov <- sampling.cov[,-c(7,8,17:22)]
+preprocov <-preProcess(sampling.cov, method = c("center","scale"))
+sampling.cov<-predict(preprocov, sampling.cov)
+
+Dailycov <- Grandtotal[,84:110]
+
+
+preproDaily <-preProcess(Dailycov, method = c("center","scale"))
+Dailycov<-predict(preproDaily, Dailycov)
+
+Julian<-Dailycov[,1:3]
+Max.hum<-Dailycov[,4:6]
+Max.temp<-Dailycov[,7:9]
+Mean.hum<-Dailycov[,10:12]
+Mean.temp<-Dailycov[,13:15]
+Min.hum<-Dailycov[,16:18]
+Min.temp<-Dailycov[,19:21]
+Sd.hum<-Dailycov[,22:24]
+Sd.temp<-Dailycov[,25:27]
+
+Dailycov<- list(Julian,Max.hum, Max.temp, Mean.hum,Mean.temp, Min.hum, Min.temp, Sd.hum, Sd.temp)
+names(Dailycov) <- c("Julian", "Maxhum","Maxtemp","Meanhum", "Meantemp","Minhum","Mintemp","sdhum","sdtemp")
+summary(sampling.cov)
+BatOccu <- Grandtotal[,2:52]
+
+```
+
+```{r, cache= TRUE}
+ocup <- batchoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = TRUE)
+
+```
+
+```{r, cache=TRUE}
+diver <- diversityoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = TRUE, index = "shannon")
+```
+
+```{r, cache=TRUE}
+glm.batdiversity <- model.diversity(BirdDiversity , method = "g", squared = FALSE)
+
+```

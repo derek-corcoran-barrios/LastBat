@@ -16,320 +16,560 @@
 <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 10</b></th>
 <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 11</b></th>
 <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 12</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 13</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 14</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 15</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 16</b></th>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">psi(Int)</td>
-<td style="padding-right: 12px; border: none;">-18.84</td>
-<td style="padding-right: 12px; border: none;">-34.18</td>
-<td style="padding-right: 12px; border: none;">69.23</td>
-<td style="padding-right: 12px; border: none;">-25.02</td>
-<td style="padding-right: 12px; border: none;">-29.69</td>
-<td style="padding-right: 12px; border: none;">-70.76</td>
-<td style="padding-right: 12px; border: none;">-38.73</td>
-<td style="padding-right: 12px; border: none;">121.97</td>
-<td style="padding-right: 12px; border: none;">-55.81</td>
-<td style="padding-right: 12px; border: none;">0.11</td>
-<td style="padding-right: 12px; border: none;">-29.91</td>
-<td style="padding-right: 12px; border: none;">71.44</td>
+<td style="padding-right: 12px; border: none;">676.06</td>
+<td style="padding-right: 12px; border: none;">414.05</td>
+<td style="padding-right: 12px; border: none;">1789.64</td>
+<td style="padding-right: 12px; border: none;">601.89</td>
+<td style="padding-right: 12px; border: none;">56.86</td>
+<td style="padding-right: 12px; border: none;">344.62</td>
+<td style="padding-right: 12px; border: none;">330.25</td>
+<td style="padding-right: 12px; border: none;">297.19</td>
+<td style="padding-right: 12px; border: none;">273.80</td>
+<td style="padding-right: 12px; border: none;">153.04</td>
+<td style="padding-right: 12px; border: none;">524.58</td>
+<td style="padding-right: 12px; border: none;">465.58</td>
+<td style="padding-right: 12px; border: none;">362.62</td>
+<td style="padding-right: 12px; border: none;">229.35</td>
+<td style="padding-right: 12px; border: none;">245.98</td>
+<td style="padding-right: 12px; border: none;">486.34</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(15.27)</td>
-<td style="padding-right: 12px; border: none;">(28.10)</td>
-<td style="padding-right: 12px; border: none;">(128.11)</td>
-<td style="padding-right: 12px; border: none;">(22.07)</td>
-<td style="padding-right: 12px; border: none;">(31.30)</td>
-<td style="padding-right: 12px; border: none;">(58.49)</td>
-<td style="padding-right: 12px; border: none;">(33.95)</td>
-<td style="padding-right: 12px; border: none;">(166.37)</td>
-<td style="padding-right: 12px; border: none;">(44.89)</td>
-<td style="padding-right: 12px; border: none;">(0.98)</td>
-<td style="padding-right: 12px; border: none;">(24.24)</td>
-<td style="padding-right: 12px; border: none;">(121.02)</td>
+<td style="padding-right: 12px; border: none;">(3051.38)</td>
+<td style="padding-right: 12px; border: none;">(386.94)</td>
+<td style="padding-right: 12px; border: none;">(1964.98)</td>
+<td style="padding-right: 12px; border: none;">(459.72)</td>
+<td style="padding-right: 12px; border: none;">(65.90)</td>
+<td style="padding-right: 12px; border: none;">(261.56)</td>
+<td style="padding-right: 12px; border: none;">(239.15)</td>
+<td style="padding-right: 12px; border: none;">(234.86)</td>
+<td style="padding-right: 12px; border: none;">(198.57)</td>
+<td style="padding-right: 12px; border: none;">(2389.47)</td>
+<td style="padding-right: 12px; border: none;">(1413.04)</td>
+<td style="padding-right: 12px; border: none;">(359.21)</td>
+<td style="padding-right: 12px; border: none;">(252.11)</td>
+<td style="padding-right: 12px; border: none;">(155.50)</td>
+<td style="padding-right: 12px; border: none;">(347.05)</td>
+<td style="padding-right: 12px; border: none;">(568.35)</td>
 </tr>
 <tr>
-<td style="padding-right: 12px; border: none;">psi(Burn.intensity.basal)</td>
-<td style="padding-right: 12px; border: none;">-14.25</td>
-<td style="padding-right: 12px; border: none;">-27.54</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-19.12</td>
+<td style="padding-right: 12px; border: none;">psi(Average)</td>
+<td style="padding-right: 12px; border: none;">-0.01</td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">113.94</td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-24.25</td>
 <td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(13.69)</td>
-<td style="padding-right: 12px; border: none;">(24.53)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(19.21)</td>
+<td style="padding-right: 12px; border: none;">275.22</td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(21.56)</td>
-<td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;">psi(I(Burn.intensity.basal^2))</td>
-<td style="padding-right: 12px; border: none;">44.38</td>
-<td style="padding-right: 12px; border: none;">80.34</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">59.42</td>
-<td style="padding-right: 12px; border: none;">100.70</td>
-<td style="padding-right: 12px; border: none;">241.33</td>
-<td style="padding-right: 12px; border: none;">131.46</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">189.86</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">70.01</td>
 <td style="padding-right: 12px; border: none;"></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(36.23)</td>
-<td style="padding-right: 12px; border: none;">(66.86)</td>
+<td style="padding-right: 12px; border: none;">(12.99)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(52.91)</td>
-<td style="padding-right: 12px; border: none;">(107.26)</td>
-<td style="padding-right: 12px; border: none;">(200.09)</td>
-<td style="padding-right: 12px; border: none;">(116.41)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(153.64)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(57.36)</td>
+<td style="padding-right: 12px; border: none;">(110.56)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(4882.70)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 </tr>
 <tr>
-<td style="padding-right: 12px; border: none;">psi(forest_dist)</td>
-<td style="padding-right: 12px; border: none;">15.44</td>
-<td style="padding-right: 12px; border: none;">26.95</td>
+<td style="padding-right: 12px; border: none;">psi(CANOPY.COVER)</td>
+<td style="padding-right: 12px; border: none;">68.44</td>
+<td style="padding-right: 12px; border: none;">44.73</td>
+<td style="padding-right: 12px; border: none;">140.75</td>
+<td style="padding-right: 12px; border: none;">61.46</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">20.46</td>
-<td style="padding-right: 12px; border: none;">22.25</td>
-<td style="padding-right: 12px; border: none;">50.46</td>
-<td style="padding-right: 12px; border: none;">28.75</td>
+<td style="padding-right: 12px; border: none;">35.84</td>
+<td style="padding-right: 12px; border: none;">37.65</td>
+<td style="padding-right: 12px; border: none;">31.40</td>
+<td style="padding-right: 12px; border: none;">29.19</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">39.74</td>
-<td style="padding-right: 12px; border: none;">1.55</td>
-<td style="padding-right: 12px; border: none;">23.71</td>
-<td style="padding-right: 12px; border: none;">67.10</td>
+<td style="padding-right: 12px; border: none;">52.14</td>
+<td style="padding-right: 12px; border: none;">58.69</td>
+<td style="padding-right: 12px; border: none;">41.36</td>
+<td style="padding-right: 12px; border: none;">24.34</td>
+<td style="padding-right: 12px; border: none;">24.45</td>
+<td style="padding-right: 12px; border: none;">48.85</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(12.67)</td>
-<td style="padding-right: 12px; border: none;">(22.75)</td>
+<td style="padding-right: 12px; border: none;">(103.24)</td>
+<td style="padding-right: 12px; border: none;">(39.22)</td>
+<td style="padding-right: 12px; border: none;">(184.13)</td>
+<td style="padding-right: 12px; border: none;">(47.01)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(18.28)</td>
-<td style="padding-right: 12px; border: none;">(22.67)</td>
-<td style="padding-right: 12px; border: none;">(41.52)</td>
-<td style="padding-right: 12px; border: none;">(24.63)</td>
+<td style="padding-right: 12px; border: none;">(28.73)</td>
+<td style="padding-right: 12px; border: none;">(33.13)</td>
+<td style="padding-right: 12px; border: none;">(26.64)</td>
+<td style="padding-right: 12px; border: none;">(22.08)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(31.89)</td>
-<td style="padding-right: 12px; border: none;">(0.87)</td>
-<td style="padding-right: 12px; border: none;">(19.84)</td>
-<td style="padding-right: 12px; border: none;">(111.60)</td>
+<td style="padding-right: 12px; border: none;">(171.08)</td>
+<td style="padding-right: 12px; border: none;">(44.75)</td>
+<td style="padding-right: 12px; border: none;">(28.95)</td>
+<td style="padding-right: 12px; border: none;">(16.70)</td>
+<td style="padding-right: 12px; border: none;">(32.72)</td>
+<td style="padding-right: 12px; border: none;">(50.24)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(GRASS)</td>
+<td style="padding-right: 12px; border: none;">1422.39</td>
+<td style="padding-right: 12px; border: none;">860.04</td>
+<td style="padding-right: 12px; border: none;">3645.45</td>
+<td style="padding-right: 12px; border: none;">1316.01</td>
+<td style="padding-right: 12px; border: none;">133.98</td>
+<td style="padding-right: 12px; border: none;">724.02</td>
+<td style="padding-right: 12px; border: none;">695.94</td>
+<td style="padding-right: 12px; border: none;">627.16</td>
+<td style="padding-right: 12px; border: none;">576.41</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">1130.98</td>
+<td style="padding-right: 12px; border: none;">1020.42</td>
+<td style="padding-right: 12px; border: none;">767.35</td>
+<td style="padding-right: 12px; border: none;">483.29</td>
+<td style="padding-right: 12px; border: none;">491.35</td>
+<td style="padding-right: 12px; border: none;">947.38</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(6060.53)</td>
+<td style="padding-right: 12px; border: none;">(795.54)</td>
+<td style="padding-right: 12px; border: none;">(4025.51)</td>
+<td style="padding-right: 12px; border: none;">(1005.31)</td>
+<td style="padding-right: 12px; border: none;">(151.77)</td>
+<td style="padding-right: 12px; border: none;">(550.31)</td>
+<td style="padding-right: 12px; border: none;">(507.18)</td>
+<td style="padding-right: 12px; border: none;">(504.98)</td>
+<td style="padding-right: 12px; border: none;">(416.55)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(3084.82)</td>
+<td style="padding-right: 12px; border: none;">(787.21)</td>
+<td style="padding-right: 12px; border: none;">(532.55)</td>
+<td style="padding-right: 12px; border: none;">(327.55)</td>
+<td style="padding-right: 12px; border: none;">(675.39)</td>
+<td style="padding-right: 12px; border: none;">(1058.10)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(HERBACIOUS)</td>
+<td style="padding-right: 12px; border: none;">16.29</td>
+<td style="padding-right: 12px; border: none;">15.88</td>
+<td style="padding-right: 12px; border: none;">40.76</td>
+<td style="padding-right: 12px; border: none;">36.42</td>
+<td style="padding-right: 12px; border: none;">25.56</td>
+<td style="padding-right: 12px; border: none;">9.47</td>
+<td style="padding-right: 12px; border: none;">9.11</td>
+<td style="padding-right: 12px; border: none;">7.97</td>
+<td style="padding-right: 12px; border: none;">7.35</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">28.00</td>
+<td style="padding-right: 12px; border: none;">12.05</td>
+<td style="padding-right: 12px; border: none;">7.01</td>
+<td style="padding-right: 12px; border: none;">6.04</td>
+<td style="padding-right: 12px; border: none;">8.71</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(27.14)</td>
+<td style="padding-right: 12px; border: none;">(13.27)</td>
+<td style="padding-right: 12px; border: none;">(71.25)</td>
+<td style="padding-right: 12px; border: none;">(28.42)</td>
+<td style="padding-right: 12px; border: none;">(28.67)</td>
+<td style="padding-right: 12px; border: none;">(8.99)</td>
+<td style="padding-right: 12px; border: none;">(7.94)</td>
+<td style="padding-right: 12px; border: none;">(7.16)</td>
+<td style="padding-right: 12px; border: none;">(5.94)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(21.72)</td>
+<td style="padding-right: 12px; border: none;">(9.34)</td>
+<td style="padding-right: 12px; border: none;">(6.57)</td>
+<td style="padding-right: 12px; border: none;">(4.83)</td>
+<td style="padding-right: 12px; border: none;">(21.76)</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(LEAF.LITTER)</td>
+<td style="padding-right: 12px; border: none;">-32.93</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-16.95</td>
+<td style="padding-right: 12px; border: none;">-16.91</td>
+<td style="padding-right: 12px; border: none;">-14.87</td>
+<td style="padding-right: 12px; border: none;">-13.38</td>
+<td style="padding-right: 12px; border: none;">-123.23</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-14.63</td>
+<td style="padding-right: 12px; border: none;">-16.66</td>
+<td style="padding-right: 12px; border: none;">-10.86</td>
+<td style="padding-right: 12px; border: none;">-7.27</td>
+<td style="padding-right: 12px; border: none;">-33.01</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(64.63)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(16.02)</td>
+<td style="padding-right: 12px; border: none;">(15.21)</td>
+<td style="padding-right: 12px; border: none;">(13.58)</td>
+<td style="padding-right: 12px; border: none;">(14.97)</td>
+<td style="padding-right: 12px; border: none;">(1959.28)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(12.82)</td>
+<td style="padding-right: 12px; border: none;">(14.55)</td>
+<td style="padding-right: 12px; border: none;">(8.63)</td>
+<td style="padding-right: 12px; border: none;">(8.27)</td>
+<td style="padding-right: 12px; border: none;">(37.73)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(ROCKY)</td>
+<td style="padding-right: 12px; border: none;">58.76</td>
+<td style="padding-right: 12px; border: none;">78.94</td>
+<td style="padding-right: 12px; border: none;">264.70</td>
+<td style="padding-right: 12px; border: none;">68.07</td>
+<td style="padding-right: 12px; border: none;">48.06</td>
+<td style="padding-right: 12px; border: none;">33.56</td>
+<td style="padding-right: 12px; border: none;">33.36</td>
+<td style="padding-right: 12px; border: none;">27.60</td>
+<td style="padding-right: 12px; border: none;">27.34</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">65.36</td>
+<td style="padding-right: 12px; border: none;">43.85</td>
+<td style="padding-right: 12px; border: none;">39.73</td>
+<td style="padding-right: 12px; border: none;">21.83</td>
+<td style="padding-right: 12px; border: none;">49.55</td>
+<td style="padding-right: 12px; border: none;">87.61</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(82.73)</td>
+<td style="padding-right: 12px; border: none;">(75.89)</td>
+<td style="padding-right: 12px; border: none;">(275.49)</td>
+<td style="padding-right: 12px; border: none;">(52.01)</td>
+<td style="padding-right: 12px; border: none;">(46.53)</td>
+<td style="padding-right: 12px; border: none;">(30.21)</td>
+<td style="padding-right: 12px; border: none;">(29.05)</td>
+<td style="padding-right: 12px; border: none;">(20.86)</td>
+<td style="padding-right: 12px; border: none;">(22.70)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(150.86)</td>
+<td style="padding-right: 12px; border: none;">(33.04)</td>
+<td style="padding-right: 12px; border: none;">(29.04)</td>
+<td style="padding-right: 12px; border: none;">(16.18)</td>
+<td style="padding-right: 12px; border: none;">(84.82)</td>
+<td style="padding-right: 12px; border: none;">(135.35)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(Int)</td>
-<td style="padding-right: 12px; border: none;">-1.76<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.74<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.86<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.78<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.83<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.80<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.82<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.86<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.80<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.79<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.75<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">-1.87<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.11<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.13<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.01<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.02<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.12<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.03<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.07<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.14<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.12<sup style="vertical-align: 0px;">***</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.40)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
-<td style="padding-right: 12px; border: none;">(0.28)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(Meanhum)</td>
-<td style="padding-right: 12px; border: none;">0.17</td>
-<td style="padding-right: 12px; border: none;">0.15</td>
-<td style="padding-right: 12px; border: none;">0.21</td>
 <td style="padding-right: 12px; border: none;">-0.27</td>
-<td style="padding-right: 12px; border: none;">0.23</td>
-<td style="padding-right: 12px; border: none;">0.22</td>
+<td style="padding-right: 12px; border: none;">-0.23</td>
+<td style="padding-right: 12px; border: none;">-0.24</td>
+<td style="padding-right: 12px; border: none;">-0.33</td>
+<td style="padding-right: 12px; border: none;">-0.11</td>
 <td style="padding-right: 12px; border: none;">-0.27</td>
-<td style="padding-right: 12px; border: none;">-0.09</td>
 <td style="padding-right: 12px; border: none;">-0.27</td>
-<td style="padding-right: 12px; border: none;">0.24</td>
-<td style="padding-right: 12px; border: none;">-0.28</td>
-<td style="padding-right: 12px; border: none;">0.23</td>
+<td style="padding-right: 12px; border: none;">-0.25</td>
+<td style="padding-right: 12px; border: none;">-0.27</td>
+<td style="padding-right: 12px; border: none;">-0.27</td>
+<td style="padding-right: 12px; border: none;">-0.21</td>
+<td style="padding-right: 12px; border: none;">-0.33</td>
+<td style="padding-right: 12px; border: none;">-0.32</td>
+<td style="padding-right: 12px; border: none;">-0.27</td>
+<td style="padding-right: 12px; border: none;">-0.12</td>
+<td style="padding-right: 12px; border: none;">-0.23</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.46)</td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.46)</td>
-<td style="padding-right: 12px; border: none;">(0.44)</td>
-<td style="padding-right: 12px; border: none;">(0.46)</td>
-<td style="padding-right: 12px; border: none;">(0.25)</td>
-<td style="padding-right: 12px; border: none;">(0.46)</td>
-<td style="padding-right: 12px; border: none;">(0.24)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.48)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(Meantemp)</td>
-<td style="padding-right: 12px; border: none;">0.94<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.91<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.86<sup style="vertical-align: 0px;">**</sup></td>
-<td style="padding-right: 12px; border: none;">0.92<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.93<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.91<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.91<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.84<sup style="vertical-align: 0px;">**</sup></td>
-<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.90<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">0.88<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.03<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.02<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.97<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.96<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.99<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.96<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.99<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">0.99<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.02<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.04<sup style="vertical-align: 0px;">***</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;">(0.26)</td>
 <td style="padding-right: 12px; border: none;">(0.26)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
 <td style="padding-right: 12px; border: none;">(0.26)</td>
 <td style="padding-right: 12px; border: none;">(0.26)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
-<td style="padding-right: 12px; border: none;">(0.27)</td>
+<td style="padding-right: 12px; border: none;">(0.25)</td>
 <td style="padding-right: 12px; border: none;">(0.26)</td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;">psi(fire_dist)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-1.24</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-1.58</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-1.42</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-1.16</td>
-<td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(1.05)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(1.20)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(1.12)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(1.03)</td>
-<td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;">psi(Burn.intensity.Canopy)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">66.92</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">116.77</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(121.32)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(156.73)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;">psi(I(Burn.intensity.Canopy^2))</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-46.84</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-82.51</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-33.04</td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(86.34)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(113.78)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(55.89)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
+<td style="padding-right: 12px; border: none;">(0.26)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(Minhum)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">0.47</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">0.60</td>
 <td style="padding-right: 12px; border: none;">0.54</td>
-<td style="padding-right: 12px; border: none;">0.32</td>
-<td style="padding-right: 12px; border: none;">0.53</td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">0.57</td>
+<td style="padding-right: 12px; border: none;">0.62</td>
+<td style="padding-right: 12px; border: none;">0.42</td>
+<td style="padding-right: 12px; border: none;">0.60</td>
+<td style="padding-right: 12px; border: none;">0.60</td>
+<td style="padding-right: 12px; border: none;">0.58</td>
+<td style="padding-right: 12px; border: none;">0.60</td>
+<td style="padding-right: 12px; border: none;">0.50</td>
+<td style="padding-right: 12px; border: none;">0.58</td>
+<td style="padding-right: 12px; border: none;">0.62</td>
+<td style="padding-right: 12px; border: none;">0.62</td>
+<td style="padding-right: 12px; border: none;">0.60</td>
 <td style="padding-right: 12px; border: none;">0.47</td>
+<td style="padding-right: 12px; border: none;">0.57</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(count)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">3.92</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">10.05</td>
+<td style="padding-right: 12px; border: none;">81.66</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">0.58</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">5.33</td>
+<td style="padding-right: 12px; border: none;">5.48</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">4.20</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(4.60)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(9.96)</td>
+<td style="padding-right: 12px; border: none;">(86.02)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(5.33)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(5.01)</td>
+<td style="padding-right: 12px; border: none;">(5.01)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(15.57)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(WOODY)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-15.66</td>
+<td style="padding-right: 12px; border: none;">22.31</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">0.93</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-133.65</td>
+<td style="padding-right: 12px; border: none;">11.29</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(58.08)</td>
+<td style="padding-right: 12px; border: none;">(19.95)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(6.94)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(1636.61)</td>
+<td style="padding-right: 12px; border: none;">(79.25)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(DOWN.WOOD)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">16.41</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">15.64</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-6.10</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-21.22</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(13.62)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(12.50)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(7.12)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(27.75)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(AreaPerHa)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-103.04</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">0.40</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-216.16</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 </tr>
 <tr>
@@ -337,92 +577,192 @@
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(109.40)</td>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.41)</td>
-<td style="padding-right: 12px; border: none;">(0.40)</td>
-<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(6.24)</td>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(3408.84)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(NAKED.SOIL)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">3.19</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(14.28)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Sd)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-111.77</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-3.40</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-0.72</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(2200.70)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(3.10)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(3.28)</td>
+<td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;"></td>
 </tr>
 <tr>
 <td style="border-top: 1px solid black;">Log Likelihood</td>
-<td style="border-top: 1px solid black;">-79.27</td>
-<td style="border-top: 1px solid black;">-78.37</td>
-<td style="border-top: 1px solid black;">-80.68</td>
-<td style="border-top: 1px solid black;">-78.44</td>
-<td style="border-top: 1px solid black;">-80.79</td>
-<td style="border-top: 1px solid black;">-79.74</td>
-<td style="border-top: 1px solid black;">-79.75</td>
-<td style="border-top: 1px solid black;">-80.00</td>
-<td style="border-top: 1px solid black;">-78.84</td>
-<td style="border-top: 1px solid black;">-82.30</td>
-<td style="border-top: 1px solid black;">-77.71</td>
-<td style="border-top: 1px solid black;">-81.22</td>
+<td style="border-top: 1px solid black;">-73.11</td>
+<td style="border-top: 1px solid black;">-74.36</td>
+<td style="border-top: 1px solid black;">-74.43</td>
+<td style="border-top: 1px solid black;">-71.96</td>
+<td style="border-top: 1px solid black;">-73.24</td>
+<td style="border-top: 1px solid black;">-73.28</td>
+<td style="border-top: 1px solid black;">-73.29</td>
+<td style="border-top: 1px solid black;">-73.41</td>
+<td style="border-top: 1px solid black;">-73.44</td>
+<td style="border-top: 1px solid black;">-74.69</td>
+<td style="border-top: 1px solid black;">-73.55</td>
+<td style="border-top: 1px solid black;">-72.30</td>
+<td style="border-top: 1px solid black;">-72.33</td>
+<td style="border-top: 1px solid black;">-73.61</td>
+<td style="border-top: 1px solid black;">-75.16</td>
+<td style="border-top: 1px solid black;">-74.03</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">AICc</td>
-<td style="padding-right: 12px; border: none;">173.63</td>
-<td style="padding-right: 12px; border: none;">174.15</td>
-<td style="padding-right: 12px; border: none;">174.16</td>
-<td style="padding-right: 12px; border: none;">174.29</td>
-<td style="padding-right: 12px; border: none;">174.38</td>
-<td style="padding-right: 12px; border: none;">174.56</td>
-<td style="padding-right: 12px; border: none;">174.58</td>
-<td style="padding-right: 12px; border: none;">175.08</td>
-<td style="padding-right: 12px; border: none;">175.09</td>
-<td style="padding-right: 12px; border: none;">175.16</td>
-<td style="padding-right: 12px; border: none;">175.21</td>
-<td style="padding-right: 12px; border: none;">175.25</td>
+<td style="padding-right: 12px; border: none;">170.85</td>
+<td style="padding-right: 12px; border: none;">170.91</td>
+<td style="padding-right: 12px; border: none;">171.05</td>
+<td style="padding-right: 12px; border: none;">171.06</td>
+<td style="padding-right: 12px; border: none;">171.13</td>
+<td style="padding-right: 12px; border: none;">171.19</td>
+<td style="padding-right: 12px; border: none;">171.22</td>
+<td style="padding-right: 12px; border: none;">171.46</td>
+<td style="padding-right: 12px; border: none;">171.52</td>
+<td style="padding-right: 12px; border: none;">171.55</td>
+<td style="padding-right: 12px; border: none;">171.75</td>
+<td style="padding-right: 12px; border: none;">171.75</td>
+<td style="padding-right: 12px; border: none;">171.80</td>
+<td style="padding-right: 12px; border: none;">171.86</td>
+<td style="padding-right: 12px; border: none;">172.50</td>
+<td style="padding-right: 12px; border: none;">172.71</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">Delta</td>
 <td style="padding-right: 12px; border: none;">0.00</td>
-<td style="padding-right: 12px; border: none;">0.52</td>
-<td style="padding-right: 12px; border: none;">0.53</td>
-<td style="padding-right: 12px; border: none;">0.66</td>
-<td style="padding-right: 12px; border: none;">0.75</td>
-<td style="padding-right: 12px; border: none;">0.93</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.19</td>
+<td style="padding-right: 12px; border: none;">0.21</td>
+<td style="padding-right: 12px; border: none;">0.27</td>
+<td style="padding-right: 12px; border: none;">0.34</td>
+<td style="padding-right: 12px; border: none;">0.37</td>
+<td style="padding-right: 12px; border: none;">0.60</td>
+<td style="padding-right: 12px; border: none;">0.67</td>
+<td style="padding-right: 12px; border: none;">0.70</td>
+<td style="padding-right: 12px; border: none;">0.89</td>
+<td style="padding-right: 12px; border: none;">0.89</td>
 <td style="padding-right: 12px; border: none;">0.95</td>
-<td style="padding-right: 12px; border: none;">1.45</td>
-<td style="padding-right: 12px; border: none;">1.46</td>
-<td style="padding-right: 12px; border: none;">1.53</td>
-<td style="padding-right: 12px; border: none;">1.58</td>
-<td style="padding-right: 12px; border: none;">1.62</td>
+<td style="padding-right: 12px; border: none;">1.01</td>
+<td style="padding-right: 12px; border: none;">1.65</td>
+<td style="padding-right: 12px; border: none;">1.86</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">Weight</td>
-<td style="padding-right: 12px; border: none;">0.13</td>
-<td style="padding-right: 12px; border: none;">0.10</td>
-<td style="padding-right: 12px; border: none;">0.10</td>
-<td style="padding-right: 12px; border: none;">0.10</td>
-<td style="padding-right: 12px; border: none;">0.09</td>
 <td style="padding-right: 12px; border: none;">0.08</td>
 <td style="padding-right: 12px; border: none;">0.08</td>
+<td style="padding-right: 12px; border: none;">0.08</td>
+<td style="padding-right: 12px; border: none;">0.08</td>
+<td style="padding-right: 12px; border: none;">0.07</td>
+<td style="padding-right: 12px; border: none;">0.07</td>
+<td style="padding-right: 12px; border: none;">0.07</td>
 <td style="padding-right: 12px; border: none;">0.06</td>
 <td style="padding-right: 12px; border: none;">0.06</td>
 <td style="padding-right: 12px; border: none;">0.06</td>
-<td style="padding-right: 12px; border: none;">0.06</td>
-<td style="padding-right: 12px; border: none;">0.06</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.03</td>
 </tr>
 <tr>
 <td style="border-bottom: 2px solid black;">Num. obs.</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
-<td style="border-bottom: 2px solid black;">111</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
 </tr>
 <tr>
-<td style="padding-right: 12px; border: none;" colspan="13"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
+<td style="padding-right: 12px; border: none;" colspan="17"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
 </tr>
 </table>

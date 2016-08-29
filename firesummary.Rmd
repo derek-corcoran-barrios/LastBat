@@ -188,18 +188,18 @@ select.My.Yu2 <- dredge(model.Occu1.My.Yu2, rank = "AICc", subset= !(
 `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
 `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
 `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)`& `p(Meanhum)`& `p(Meanhum)`)
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)`& `p(Meanhum)`& `p(Minhum)`)
 
 best2.My.Yu2<-get.models(select.My.Yu2, 1)[[1]]
 Occu1.layer.MyYu2 <- predict(best2.My.Yu2, type = "state", newdata=Predictors)
 
 brks= c(0, 0.1, 0.2, 0.3, 0.4,0.5, 0.6,0.7, 0.8,0.9, 1)
-cols <- rev(terrain.colors(10))
+cols <- magma(10)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 
-plot(Occu1.layer.MyYu2$Predicted, colNA="black", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
+plot(Occu1.layer.MyYu2$Predicted, colNA="white", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)), file = "myyu.doc")
@@ -238,7 +238,7 @@ Occu1.layer.MyCa2 <- predict(best2.My.Ca2, type = "state", newdata=Predictors)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 Occu1.layer.MyCa<-Occu1.layer.MyCa2
-plot(Occu1.layer.MyCa$Predicted, colNA="black", main="Occupancy estimation for California Bat",breaks=brks, col=cols,lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyCa$Predicted, colNA="white", main="Occupancy estimation for California Bat",breaks=brks, col=cols,lab.breaks=brks, zlim=c(0,1))
 library(texreg)
 htmlreg(extract(subset(select.My.Ca2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -279,7 +279,7 @@ Occu1.layer.MyCi2 <- predict(best2.My.Ci2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 PNF <- readRDS("PNF.rds")
 Occu1.layer.MyCi<-Occu1.layer.MyCi2
-plot(Occu1.layer.MyCi$Predicted*PNF, colNA="black", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyCi$Predicted*PNF, colNA="white", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Ci2, delta <= 2, recalc.weights = TRUE)))
@@ -316,10 +316,10 @@ best2.My.Vo2<-get.models(select.My.Vo2, 1)[[1]]
 Occu1.layer.MyVo2 <- predict(best2.My.Vo2, type = "state", newdata=Predictors)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 
 Occu1.layer.MyVo<-Occu1.layer.MyVo2
-plot(Occu1.layer.MyVo$Predicted, colNA="black", main="Occupancy estimation for Hairy-winged bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyVo$Predicted*PNF, colNA="white", main="Occupancy estimation for Hairy-winged bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Vo2, delta <= 2, recalc.weights = TRUE)))
@@ -360,7 +360,7 @@ Occu1.layer.MyLu2 <- predict(best2.My.Lu2, type = "state", newdata=Predictors)
 library(texreg)
 
 Occu1.layer.MyLu2<-Occu1.layer.MyLu2
-plot(Occu1.layer.MyLu2$Predicted, colNA="black", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyLu2$Predicted, colNA="white", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -400,7 +400,7 @@ Occu1.layer.LaBl2 <- predict(best2.La.Bl2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 
 Occu1.layer.LaBl2<-Occu1.layer.LaBl2
-plot(Occu1.layer.LaBl2$Predicted*PNF, colNA="black", main="Occupancy estimation for Western Red Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.LaBl2$Predicted*PNF, colNA="white", main="Occupancy estimation for Western Red Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.La.Bl2, delta <= 2, recalc.weights = TRUE)))
@@ -437,7 +437,7 @@ Occu1.layer.MyEv2 <- predict(best2.My.Ev2, type = "state", newdata=Predictors)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 Occu1.layer.MyEv2<-Occu1.layer.MyEv2
-plot(Occu1.layer.MyEv2$Predicted, colNA="black", main="Occupancy estimation for Long Eared Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyEv2$Predicted, colNA="white", main="Occupancy estimation for Long Eared Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Ev2, delta <= 2, recalc.weights = TRUE)))
@@ -479,7 +479,7 @@ Occu1.layer.AnPa2 <- predict(best2.An.Pa2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.AnPa2<-Occu1.layer.AnPa2
-plot(Occu1.layer.AnPa2$Predicted*PNF, colNA="black", main="Occupancy estimation for Pallid Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.AnPa2$Predicted*PNF, colNA="white", main="Occupancy estimation for Pallid Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.An.Pa2, delta <= 2, recalc.weights = TRUE)))
@@ -520,7 +520,7 @@ Occu1.layer.MyTh2 <- predict(best2.My.Th2, type = "state", newdata=Predictors)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 Occu1.layer.MyTh2<-Occu1.layer.MyTh2
-plot(Occu1.layer.MyTh2$Predicted*PNF, colNA="black", main="Occupancy estimation for Fringed Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.MyTh2$Predicted*PNF, colNA="white", main="Occupancy estimation for Fringed Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.My.Th2, delta <= 2, recalc.weights = TRUE)))
@@ -562,7 +562,7 @@ Occu1.layer.CoTo2 <- predict(best2.Co.To2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.CoTo2<-Occu1.layer.CoTo2
-plot(Occu1.layer.CoTo2$Predicted*PNF, colNA="black", main="Occupancy estimation for Townsend big eared bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.CoTo2$Predicted*PNF, colNA="white", main="Occupancy estimation for Townsend big eared bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 
 htmlreg(extract(subset(select.Co.To2, delta <= 2, recalc.weights = TRUE)))
@@ -599,7 +599,7 @@ Occu1.layer.PaHe2 <- predict(best2.Pa.He2, type = "state", newdata=Predictors)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 Occu1.layer.PaHe2<-Occu1.layer.PaHe2
-plot(Occu1.layer.PaHe2$Predicted, colNA="black", main="Occupancy estimation for Pipistrel",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.PaHe2$Predicted, colNA="white", main="Occupancy estimation for Pipistrel",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.Pa.He2, delta <= 2, recalc.weights = TRUE)))
@@ -640,7 +640,7 @@ Occu1.layer.EpFu2 <- predict(best2.Ep.Fu2, type = "state", newdata=Predictors)
 
 
 Occu1.layer.EpFu2<-Occu1.layer.EpFu2
-plot(Occu1.layer.EpFu2$Predicted, colNA="black", main="Occupancy estimation for Big Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.EpFu2$Predicted, colNA="white", main="Occupancy estimation for Big Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 library(texreg)
 htmlreg(extract(subset(select.Ep.Fu2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -683,7 +683,7 @@ Occu1.layer.LaNo2 <- predict(best2.La.No2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.LaNo2<-Occu1.layer.LaNo2
-plot(Occu1.layer.LaNo2$Predicted, colNA="black", main="Occupancy estimation for Silver Haired Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.LaNo2$Predicted, colNA="white", main="Occupancy estimation for Silver Haired Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
@@ -724,7 +724,7 @@ Occu1.layer.TaBr2 <- predict(best2.Ta.Br2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.TaBr2<-Occu1.layer.TaBr2
-plot(Occu1.layer.TaBr2$Predicted, colNA="black", main="Occupancy estimation for Brazilian free-tailed bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.TaBr2$Predicted, colNA="white", main="Occupancy estimation for Brazilian free-tailed bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.Ta.Br2, delta <= 2, recalc.weights = TRUE)))
@@ -767,7 +767,7 @@ Occu1.layer.LaCi2 <- predict(best2.La.Ci2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.LaCi2<-Occu1.layer.LaCi2
-plot(Occu1.layer.LaCi2$Predicted, colNA="black", main="Occupancy estimation for Hoary Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.LaCi2$Predicted, colNA="white", main="Occupancy estimation for Hoary Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.La.Ci2, delta <= 2, recalc.weights = TRUE)))
@@ -805,7 +805,7 @@ Occu1.layer.EuMa2 <- predict(best2.Eu.Ma2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 Occu1.layer.EuMa2<-Occu1.layer.EuMa2
-plot(Occu1.layer.EuMa2$Predicted, colNA="black", main="Occupancy estimation for Spotted Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.EuMa2$Predicted, colNA="white", main="Occupancy estimation for Spotted Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.Eu.Ma2, delta <= 2, recalc.weights = TRUE)))
@@ -844,11 +844,25 @@ best2.Eu.Pe2<-get.models(select.Eu.Pe2, 1)[[1]]
 Occu1.layer.EuPe2 <- predict(best2.Eu.Pe2, type = "state", newdata=Predictors)
 ```
 
-```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="asis"}
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 
 Occu1.layer.EuPe2<-Occu1.layer.EuPe2
-plot(Occu1.layer.EuPe2$Predicted*PNF, colNA="black", main="Occupancy estimation for western mastiff bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+plot(Occu1.layer.EuPe2$Predicted*PNF, colNA="white", main="Occupancy estimation for western mastiff bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 library(texreg)
 htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
 ```
+
+#Relationships between different species of Bats
+
+
+#Fire bats
+
+
+```{r,echo=FALSE, cache=TRUE, fig.width=6, fig.height=6}
+#N=49a
+FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
+names(FireBats)<-c("Yuma Myotis", "California bat","Small Footed Myotis", "Hairy-winged bat" ,"Little Brown Bat", "Western Red Bat","Long-eared Bat" ,"Pallid Bat", "Fringed Bat", "Townsend's big-eared Bat", "Western Pipistrelle", "Big Brow Bat","Silver-Haired Bat", "Brazilian free-tailed bat", "Hoary Bat", "Spotted bat", " western mastiff bat")
+
+library(viridis)
+levelplot(FireBats, col.regions = magma(99), colorkey = list(space = "bottom"))
