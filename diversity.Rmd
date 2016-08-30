@@ -64,12 +64,12 @@ BatOccu <- Grandtotal[,2:52]
 ```
 
 ```{r, cache= TRUE}
-ocup <- batchoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = TRUE)
+ocup <- batchoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = FALSE)
 
 ```
 
 ```{r, cache=TRUE}
-diver <- diversityoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = TRUE, index = "shannon")
+diver <- diversityoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = FALSE, index = "shannon")
 ```
 
 ```{r, cache=TRUE}
