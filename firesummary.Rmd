@@ -2,7 +2,7 @@
 title: "Firesummary"
 author: "Derek Corcoran"
 date: "August 25, 2016"
-output: html_document
+output: pdf_document
 ---
 
 
@@ -37,6 +37,7 @@ library(RCurl)
 library(foreign)
 library(caret)
 library(AICcmodavg)
+library(viridis)
 ```
 
 ```{r,echo=FALSE,warning=FALSE,message=FALSE,results='hide', cache=TRUE}

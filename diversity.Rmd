@@ -2,7 +2,7 @@
 title: "Diversityoccupancy bats"
 author: "Derek Corcoran"
 date: "August 29, 2016"
-output: html_document
+output: pdf_document
 ---
 
 ```{r setup, include=FALSE}
