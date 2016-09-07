@@ -24,5 +24,6 @@ RCurl
 foreign
 caret
 AICcmodavg
-texreg
 viridis
+texreg
+plotrix

@@ -2,7 +2,7 @@
 title: "Firesummary"
 author: "Derek Corcoran"
 date: "August 25, 2016"
-output: pdf_document
+output: html_document
 ---
 
 
@@ -863,7 +863,79 @@ htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
 ```{r,echo=FALSE, cache=TRUE, fig.width=6, fig.height=6}
 #N=49a
 FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
-names(FireBats)<-c("Yuma Myotis", "California bat","Small Footed Myotis", "Hairy-winged bat" ,"Little Brown Bat", "Western Red Bat","Long-eared Bat" ,"Pallid Bat", "Fringed Bat", "Townsend's big-eared Bat", "Western Pipistrelle", "Big Brow Bat","Silver-Haired Bat", "Brazilian free-tailed bat", "Hoary Bat", "Spotted bat", " western mastiff bat")
+names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA", "MYTH", "COTO", "PAHE", "EPFU","LANO", "TABR", "LACI", "EUMA", "EUPE")
 
 library(viridis)
 levelplot(FireBats, col.regions = magma(99), colorkey = list(space = "bottom"))
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+raster.values <- raster::extract(FireBats, cbind(Grandtotal$LONG, Grandtotal$LAT))
+summary(raster.values)
+Predictors<- readRDS("Predictors_Stack.rds")
+
+fire.values <- raster::extract(Predictors, cbind(Grandtotal$LONG, Grandtotal$LAT))
+
+fire.values <- data.frame(fire.values)
+
+fire.values <- (fire.values$Burn.intensity.Canopy + fire.values$Burn.intensity.basal)/2
+
+hist(fire.values)
+
+raster.values <- cbind(raster.values, fire.values)
+raster.values <- data.frame(raster.values)
+raster.values = within(raster.values, {
+    FIRE = as.factor(ifelse(fire.values == 0, "No Fire", "Fire"))
+ })
+
+summary(raster.values)
+```
+
+
+```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE}
+
+library(reshape)
+mdata <- melt(raster.values, id="FIRE")
+
+mdata
+
+
+	
+
+library(ggplot2)
+library(plotrix) # for std error function
+library(dplyr) # for group_by and summarise_each function
+library(ggplot2)
+
+ggplot(aes(y = value, x = FIRE), data = mdata[1:2091,]) + geom_boxplot()
+
+ggplot(aes(y = value, x = variable, fill = FIRE), data = mdata[1:2091,]) + geom_boxplot()
+
+# Group data by when and site
+grouped_df1<-group_by(mdata[1:2091,], variable , FIRE)
+
+#summarise grouped data and calculate mean and standard error using function mean and std.error(from plotrix)
+summarised_df1<-summarise_each(grouped_df1,funs(mean=mean(., na.rm = TRUE),std_error=std.error))
+
+summarised_df1
+# Define the top and bottom of the errorbars
+limits <- aes(ymax = mean + std_error, ymin=mean-std_error)
+
+#Begin your ggplot
+#Here we are plotting site vs mean and filling by another factor variable when
+g<-ggplot(summarised_df1,aes(y = mean, x = variable, fill = FIRE))
+
+#Creating bar to show the factor variable position_dodge 
+#ensures side by side creation of factor bars
+g<-g+geom_bar(stat = "identity",position = position_dodge())
+
+#creation of error bar
+g<-g+geom_errorbar(limits,width=0.25,position = position_dodge(width = 0.9))
+#print graph
+g + theme(axis.text.x=element_text(angle = 90))+ 
+  xlab("Species") + ylab("Mean Occupancy")
+```
+
+
