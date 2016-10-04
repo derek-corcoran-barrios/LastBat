@@ -1,10 +1,4 @@
 base
-methods
-datasets
-utils
-grDevices
-graphics
-stats
 sp
 raster
 lattice
@@ -19,3 +13,6 @@ reshape
 Rcpp
 unmarked
 DiversityOccupancy
+ggplot2
+caret
+knitr

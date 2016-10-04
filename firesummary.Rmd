@@ -52,6 +52,7 @@ Grandtotal <- Grandtotal[,-1]
 
 sampling.cov<- Grandtotal[,53:83]
 sampling.cov <- sampling.cov[,-c(7,8,17:22)]
+saveRDS(sampling.cov[,15:23], "sampling.cov.rds")
 #This next step changes according to the models
 preprocov <-preProcess(sampling.cov[,15:23], method = c("center","scale"))
 sampling.cov<-predict(preprocov, sampling.cov[,15:23])
@@ -364,6 +365,8 @@ Occu1.layer.MyLu2<-Occu1.layer.MyLu2
 plot(Occu1.layer.MyLu2$Predicted, colNA="white", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
 htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
+htmlreg(extract(subset(select.My.Lu2, delta <= 0.5, recalc.weights = TRUE)), file = "MYLU.doc")
+
 ```
 
 
@@ -919,13 +922,17 @@ grouped_df1<-group_by(mdata[1:2091,], variable , FIRE)
 #summarise grouped data and calculate mean and standard error using function mean and std.error(from plotrix)
 summarised_df1<-summarise_each(grouped_df1,funs(mean=mean(., na.rm = TRUE),std_error=std.error))
 
-summarised_df1
+summarised_df2<-summarise_each(grouped_df1,funs(mean=mean(., na.rm = TRUE),std_error=std.error, n = sum(!is.na(.))))
+
+kable(summarised_df2)
+
+saveRDS(summarised_df1, "summarised_df1.rds")
 # Define the top and bottom of the errorbars
 limits <- aes(ymax = mean + std_error, ymin=mean-std_error)
 
 #Begin your ggplot
 #Here we are plotting site vs mean and filling by another factor variable when
-g<-ggplot(summarised_df1,aes(y = mean, x = variable, fill = FIRE))
+g<-ggplot(summarised_df1,aes(y = mean, x = reorder(variable, -mean), fill = FIRE))
 
 #Creating bar to show the factor variable position_dodge 
 #ensures side by side creation of factor bars
@@ -1028,6 +1035,8 @@ models <- full_join(models, Models[[17]])
 
 colnames(models) <- gsub("\\)","",gsub("p\\(", "",gsub("I\\(", "",gsub("psi\\(", "",colnames(models)))))
 colnames(models)
+MODELS <- models[,c(17,3:8)] 
+MODELS2 <- models[,c(17,9:11,18:23)] 
 
 models[,-17] <- ifelse(is.na(models[,-17]), 0 , 1)
 
@@ -1037,13 +1046,13 @@ Occupancy.table <- models[,c(17,3:8)]
 Total.occupancy <- c("Total", colSums(Occupancy.table[,-1]))
 Total <- c(rowSums(Occupancy.table[,-1]), "")
 
-Occupancy.table <- rbind(Occupancy.table,Total.occupancy)
+Occupancy.table <- rbind(MODELS,Total.occupancy)
 
 Total
 length(Total)
 kable(cbind(Occupancy.table, Total))
 Occupancy.table <- cbind(Occupancy.table, Total)
-write.csv(Occupancy.table, "occupancytable.csv")
+write.csv(Occupancy.table, "occupancytable2.csv")
 
 #####################Detection#################################
 
@@ -1052,12 +1061,13 @@ Detection.table <- models[,c(17,9:11,18:23)]
 Total.detection <- c("Total", colSums(Detection.table[,-1]))
 Total <- c(rowSums(Detection.table[,-1]), "")
 
-Detection.table <- rbind(Detection.table,Total.detection)
+Detection.table <- rbind(MODELS2,Total.detection)
 
 Total
 length(Total)
 kable(cbind(Detection.table, Total))
 Detection.table <- cbind(Detection.table, Total)
-write.csv(Detection.table, "Detectiontable.csv")
-
+write.csv(Detection.table, "Detectiontable2.csv")
+saveRDS(best2.My.Lu2, "best2.My.Lu2.rds")
+saveRDS(preprocov, "preprocov.rds")
 ```

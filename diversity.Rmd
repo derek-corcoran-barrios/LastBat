@@ -2,7 +2,7 @@
 title: "Diversityoccupancy bats"
 author: "Derek Corcoran"
 date: "August 29, 2016"
-output: pdf_document
+output: html_document
 ---
 
 ```{r setup, include=FALSE}
@@ -23,6 +23,7 @@ library(maps)
 library(maptools)
 library(rgdal)
 library(caret)
+library(knitr)
 library(DiversityOccupancy)
 ```
 
@@ -34,9 +35,12 @@ plot(Predictors)
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
 Grandtotal <- read.csv("~/LastBat/Grandtotal.csv")
 Grandtotal <- Grandtotal[,-1]
+Grandtotal <- Grandtotal[complete.cases(Grandtotal),]
+
 
 sampling.cov<- Grandtotal[,53:83]
 sampling.cov <- sampling.cov[,-c(7,8,17:22)]
+sampling.cov <- sampling.cov[,20:23]
 preprocov <-preProcess(sampling.cov, method = c("center","scale"))
 sampling.cov<-predict(preprocov, sampling.cov)
 
@@ -58,21 +62,18 @@ Sd.temp<-Dailycov[,25:27]
 
 Dailycov<- list(Julian,Max.hum, Max.temp, Mean.hum,Mean.temp, Min.hum, Min.temp, Sd.hum, Sd.temp)
 names(Dailycov) <- c("Julian", "Maxhum","Maxtemp","Meanhum", "Meantemp","Minhum","Mintemp","sdhum","sdtemp")
-summary(sampling.cov)
 BatOccu <- Grandtotal[,2:52]
 
 ```
 
-```{r, cache= TRUE}
-ocup <- batchoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = FALSE)
 
+```{r, cache=TRUE}
+diver <- diversityoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = TRUE, index = "shannon")
+
+diver
 ```
 
 ```{r, cache=TRUE}
-diver <- diversityoccu(pres = BatOccu, sitecov = sampling.cov, obscov = Dailycov, spp = 17, form = ~ Julian + Maxhum + Maxtemp + Meanhum + Meantemp + Minhum + Mintemp + sdhum + sdtemp ~Burn.intensity.soil + I(Burn.intensity.soil^2) + Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, dredge = FALSE, index = "shannon")
-```
-
-```{r, cache=TRUE}
-glm.batdiversity <- model.diversity(BirdDiversity , method = "g", squared = FALSE)
+glm.batdiversity <- model.diversity(diver , method = "g", squared = TRUE)
 
 ```
