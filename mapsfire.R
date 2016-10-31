@@ -104,7 +104,9 @@ plot(PNF, add = TRUE, legend = FALSE, col = "darkgreen")
 
 
 #####################################################################
-
+library(raster)
+library(rasterVis)
+firebats <- readRDS("firebats.rds")
 df<- data.frame(NULL)
 for(i in 1:17){
   df[i,1] <- cellStats(firebats[[i]], "sd")
@@ -116,10 +118,17 @@ colnames(df) <- c("sd", "max", "min")
 df$names<-names(firebats)
 df$order <- c(1:17)
 df$diff <- (df$max - df$min)
+library(dplyr)
 df<- arrange(df, desc(sd))
 
 firebats2<- subset(firebats, df$order)
 
-
+library(sp)
+library(latticeExtra)
 library(viridis)
-levelplot(firebats2, col.regions = magma(99), colorkey = list(space = "bottom"))
+levelplot(firebats2[[1]], col.regions = magma(99), colorkey = list(space = "bottom"))+ 
+  layer({
+    SpatialPolygonsRescale(layout.north.arrow(type = 1),
+                           offset = c(-121.5,40.1),
+                           scale = 0.1)
+  })

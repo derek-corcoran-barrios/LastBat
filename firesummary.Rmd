@@ -1072,4 +1072,254 @@ saveRDS(best2.My.Lu2, "best2.My.Lu2.rds")
 saveRDS(best2.My.Th2, "best2.My.Th2.rds")
 saveRDS(preprocov, "preprocov.rds")
 ```
+#Goodnes of fit
+##MYYU
 
+```{r, cache=TRUE, echo=FALSE}
+best2.My.Yu2@data@siteCovs[is.na(best2.My.Yu2@data@siteCovs)] <- 0
+best2.My.Yu2@data@obsCovs[is.na(best2.My.Yu2@data@obsCovs)] <- 0
+best2.My.Yu2@data@y[is.na(best2.My.Yu2@data@y)] <- 0
+obs.boot <- mb.gof.test(best2.My.Yu2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+```
+
+##MYCA
+
+```{r, cache=TRUE, echo=FALSE}
+best2.My.Ca2@data@siteCovs[is.na(best2.My.Ca2@data@siteCovs)] <- 0
+best2.My.Ca2@data@obsCovs[is.na(best2.My.Ca2@data@obsCovs)] <- 0
+best2.My.Ca2@data@y[is.na(best2.My.Ca2@data@y)] <- 0
+obs.boot <- mb.gof.test(best2.My.Ca2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##MYCI
+
+```{r, cache=TRUE, echo=FALSE}
+
+best2.My.Ci2@data@siteCovs[is.na(best2.My.Ci2@data@siteCovs)] <- 0
+best2.My.Ci2@data@obsCovs[is.na(best2.My.Ci2@data@obsCovs)] <- 0
+best2.My.Ci2@data@y[is.na(best2.My.Ci2@data@y)] <- 0
+obs.boot <- mb.gof.test(best2.My.Ci2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+```
+
+##MYVO
+
+```{r, cache=TRUE, echo=FALSE}
+best2.My.Vo2@data@siteCovs[is.na(best2.My.Vo2@data@siteCovs)] <- 0
+best2.My.Vo2@data@obsCovs[is.na(best2.My.Vo2@data@obsCovs)] <- 0
+best2.My.Vo2@data@y[is.na(best2.My.Vo2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.My.Vo2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##MYLU
+
+```{r, cache=TRUE, echo=FALSE}
+best2.My.Lu2@data@siteCovs[is.na(best2.My.Lu2@data@siteCovs)] <- 0
+best2.My.Lu2@data@obsCovs[is.na(best2.My.Lu2@data@obsCovs)] <- 0
+best2.My.Lu2@data@y[is.na(best2.My.Lu2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.My.Lu2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##LABL
+
+```{r, cache=TRUE, echo=FALSE}
+best2.La.Bl2@data@siteCovs[is.na(best2.La.Bl2@data@siteCovs)] <- 0
+best2.La.Bl2@data@obsCovs[is.na(best2.La.Bl2@data@obsCovs)] <- 0
+best2.La.Bl2@data@y[is.na(best2.La.Bl2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.La.Bl2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##MYEV
+
+```{r, cache=TRUE, echo=FALSE}
+
+best2.My.Ev2@data@siteCovs[is.na(best2.My.Ev2@data@siteCovs)] <- 0
+best2.My.Ev2@data@obsCovs[is.na(best2.My.Ev2@data@obsCovs)] <- 0
+best2.My.Ev2@data@y[is.na(best2.My.Ev2@data@y)] <- 0
+obs.boot <- mb.gof.test(best2.My.Ev2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##ANPA
+
+```{r, cache=TRUE, echo=FALSE}
+best2.An.Pa2@data@siteCovs[is.na(best2.An.Pa2@data@siteCovs)] <- 0
+best2.An.Pa2@data@obsCovs[is.na(best2.An.Pa2@data@obsCovs)] <- 0
+best2.An.Pa2@data@y[is.na(best2.An.Pa2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.An.Pa2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##MYTH
+
+```{r, cache=TRUE, echo=FALSE}
+best2.My.Th2@data@siteCovs[is.na(best2.My.Th2@data@siteCovs)] <- 0
+best2.My.Th2@data@obsCovs[is.na(best2.My.Th2@data@obsCovs)] <- 0
+best2.My.Th2@data@y[is.na(best2.My.Th2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.My.Th2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##COTO
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Co.To2@data@siteCovs[is.na(best2.Co.To2@data@siteCovs)] <- 0
+best2.Co.To2@data@obsCovs[is.na(best2.Co.To2@data@obsCovs)] <- 0
+best2.Co.To2@data@y[is.na(best2.Co.To2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Co.To2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##PAHE
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Pa.He2@data@siteCovs[is.na(best2.Pa.He2@data@siteCovs)] <- 0
+best2.Pa.He2@data@obsCovs[is.na(best2.Pa.He2@data@obsCovs)] <- 0
+best2.Pa.He2@data@y[is.na(best2.Pa.He2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Pa.He2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##EPFU
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Ep.Fu2@data@siteCovs[is.na(best2.Ep.Fu2@data@siteCovs)] <- 0
+best2.Ep.Fu2@data@obsCovs[is.na(best2.Ep.Fu2@data@obsCovs)] <- 0
+best2.Ep.Fu2@data@y[is.na(best2.Ep.Fu2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Ep.Fu2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##LANO
+
+```{r, cache=TRUE, echo=FALSE}
+best2.La.No2@data@siteCovs[is.na(best2.La.No2@data@siteCovs)] <- 0
+best2.La.No2@data@obsCovs[is.na(best2.La.No2@data@obsCovs)] <- 0
+best2.La.No2@data@y[is.na(best2.La.No2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.La.No2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##TABR
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Ta.Br2@data@siteCovs[is.na(best2.Ta.Br2@data@siteCovs)] <- 0
+best2.Ta.Br2@data@obsCovs[is.na(best2.Ta.Br2@data@obsCovs)] <- 0
+best2.Ta.Br2@data@y[is.na(best2.Ta.Br2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Ta.Br2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##LACI
+
+```{r, cache=TRUE, echo=FALSE}
+best2.La.Ci2@data@siteCovs[is.na(best2.La.Ci2@data@siteCovs)] <- 0
+best2.La.Ci2@data@obsCovs[is.na(best2.La.Ci2@data@obsCovs)] <- 0
+best2.La.Ci2@data@y[is.na(best2.La.Ci2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.La.Ci2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##EUMA
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Eu.Ma2@data@siteCovs[is.na(best2.Eu.Ma2@data@siteCovs)] <- 0
+best2.Eu.Ma2@data@obsCovs[is.na(best2.Eu.Ma2@data@obsCovs)] <- 0
+best2.Eu.Ma2@data@y[is.na(best2.Eu.Ma2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Eu.Ma2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```
+
+##EUPE
+
+```{r, cache=TRUE, echo=FALSE}
+best2.Eu.Pe2@data@siteCovs[is.na(best2.Eu.Pe2@data@siteCovs)] <- 0
+best2.Eu.Pe2@data@obsCovs[is.na(best2.Eu.Pe2@data@obsCovs)] <- 0
+best2.Eu.Pe2@data@y[is.na(best2.Eu.Pe2@data@y)] <- 0
+
+obs.boot <- mb.gof.test(best2.Eu.Pe2, nsim = 5000)
+##note that more bootstrap samples are recommended
+##(e.g., 1000, 5000, or 10 000
+obs.boot
+print(obs.boot, digits.vals = 4, digits.chisq = 4)
+
+```

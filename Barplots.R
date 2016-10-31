@@ -125,3 +125,43 @@ library(ggthemr)
 ggthemr("chalk", type="outer", layout="scientific", spacing=2)
 ggplot(EdgeOutput, aes(x = Distance, y = Occupancy))  + geom_ribbon(aes(ymax = upper, ymin = lower), fill = "darkslategray2", alpha = 0.5) + geom_line(color= "white", size =1.15)
 
+
+
+########################################################################
+###########################PAPER FIGURES#########################
+####################################
+
+
+#Barplot
+
+summarised_df1 <- readRDS("summarised_df1.rds")
+
+mean_fire <- summarised_df1$mean[rep(seq(from = 2, to = 34, by = 2), each = 2)]
+limits <- aes(ymax = mean + std_error, ymin=mean-std_error)
+g<-ggplot(summarised_df1,aes(y = mean, x = reorder(variable, -mean_fire), fill = FIRE))
+g<-g+geom_bar(stat = "identity",position = position_dodge(), size = 1.5)+ scale_fill_grey(start = 0.3, end = .8)
+g<-g+geom_errorbar(limits,width=0.25,position = position_dodge(0.9)) + ylab("Occupancy") + xlab("Species") + theme_classic() + theme(panel.grid.major = element_blank()) 
+
+g + scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(), 
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 1),
+        axis.line.y = element_line(color="black", size = 1))
+
+##### alt 2
+
+g<-ggplot(summarised_df1,aes(y = mean, x = reorder(variable, mean_fire), fill = FIRE))
+g<-g+geom_bar(stat = "identity",position = position_dodge(), size = 1.5)+ scale_fill_grey(start = 0.3, end = .8)
+g<-g+geom_errorbar(limits,width=0.25,position = position_dodge(0.9)) + ylab("Occupancy") + xlab("Species") + theme_classic() + theme(panel.grid.major = element_blank()) 
+
+g + scale_y_continuous(limits = c(0, 1), expand = c(0, 0)) + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(), 
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 1),
+        axis.line.y = element_line(color="black", size = 1)) + coord_flip()
