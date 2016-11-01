@@ -28,12 +28,14 @@ ALT <-raster("C:/Users/corcoranbarriosd/Desktop/ALT/USA1_alt.grd")
 ALT[ALT < 1800] <- NA
 plot(ALT) 
 crs(PNF) <- " +proj=longlat +ellps=WGS84" 
+
+
 map('state', fill = FALSE, xlim = c(-125, -114), ylim = c(32.2, 42.5), xlab = "lon", ylab = "lat")
-map.axes(cex.axis=0.8)
-plot(PNF, add = TRUE, col = "red", legend = FALSE)
-
-
-
+map.axes(cex.axis=1)
+plot(PNF, add = TRUE, col = "grey", legend = FALSE)
+map.scale(x=-124, y=34, ratio=FALSE, relwidth=0.3)
+library(GISTools)  
+north.arrow(xb=-116, yb=41, len=0.22, lab="N")  
 
 
 

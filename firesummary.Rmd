@@ -1323,3 +1323,24 @@ obs.boot
 print(obs.boot, digits.vals = 4, digits.chisq = 4)
 
 ```
+
+```{r, echo=FALSE}
+
+saveRDS(best2.Ta.Br2, "best2.Ta.Br2.rds")
+
+saveRDS(best2.Pa.He2, "best2.Pa.He2.rds")
+
+saveRDS(best2.My.Yu2, "best2.My.Yu2.rds")
+
+saveRDS(best2.My.Lu2, "best2.My.Lu2.rds")
+
+saveRDS(best2.My.Ev2, "best2.My.Ev2.rds")
+
+saveRDS(best2.My.Ca2, "best2.My.Ca2.rds")
+
+saveRDS(best2.La.No2, "best2.La.No2.rds")
+
+
+
+
+```
