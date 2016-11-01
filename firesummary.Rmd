@@ -1340,6 +1340,13 @@ saveRDS(best2.My.Ca2, "best2.My.Ca2.rds")
 
 saveRDS(best2.La.No2, "best2.La.No2.rds")
 
+saveRDS(best2.La.Ci2, "best2.La.Ci2.rds")
+
+saveRDS(best2.La.Bl2, "best2.La.Bl2.rds")
+
+saveRDS(best2.Eu.Ma2, "best2.Eu.Ma2.rds")
+
+saveRDS(best2.Ep.Fu2, "best2.Ep.Fu2.rds")
 
 
 
