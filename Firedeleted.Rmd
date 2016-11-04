@@ -901,8 +901,7 @@ summary(raster.values)
 library(reshape)
 mdata <- melt(raster.values, id="FIRE")
 
-mdata
-
+summary(mdata)
 
 	
 

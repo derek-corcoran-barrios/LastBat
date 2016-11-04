@@ -5,124 +5,76 @@
 <tr>
 <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b></b></th>
 <th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 1</b></th>
-<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 2</b></th>
-<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 3</b></th>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">psi(Int)</td>
-<td style="padding-right: 12px; border: none;">0.84</td>
-<td style="padding-right: 12px; border: none;">0.18</td>
-<td style="padding-right: 12px; border: none;">-0.55<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.99</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;">(0.60)</td>
-<td style="padding-right: 12px; border: none;">(0.37)</td>
-<td style="padding-right: 12px; border: none;">(0.22)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">psi(Burn.intensity.Canopy)</td>
-<td style="padding-right: 12px; border: none;">3.14<sup style="vertical-align: 0px;">*</sup></td>
-<td style="padding-right: 12px; border: none;">1.35<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">3.30<sup style="vertical-align: 0px;">*</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(1.31)</td>
-<td style="padding-right: 12px; border: none;">(0.39)</td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(1.34)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">psi(I(Burn.intensity.Canopy^2))</td>
-<td style="padding-right: 12px; border: none;">-1.40<sup style="vertical-align: 0px;">*</sup></td>
-<td style="padding-right: 12px; border: none;">-0.73<sup style="vertical-align: 0px;">*</sup></td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-1.52<sup style="vertical-align: 0px;">**</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.56)</td>
-<td style="padding-right: 12px; border: none;">(0.29)</td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.57)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">psi(forest_dist)</td>
-<td style="padding-right: 12px; border: none;">-1.21</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-1.30</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.83)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.84)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(Int)</td>
-<td style="padding-right: 12px; border: none;">1.08<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">1.08<sup style="vertical-align: 0px;">***</sup></td>
-<td style="padding-right: 12px; border: none;">1.08<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.01<sup style="vertical-align: 0px;">***</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;">(0.24)</td>
-<td style="padding-right: 12px; border: none;">(0.25)</td>
-<td style="padding-right: 12px; border: none;">(0.25)</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">p(sdtemp)</td>
-<td style="padding-right: 12px; border: none;">1.00<sup style="vertical-align: 0px;">**</sup></td>
-<td style="padding-right: 12px; border: none;">1.01<sup style="vertical-align: 0px;">**</sup></td>
-<td style="padding-right: 12px; border: none;">1.01<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.03<sup style="vertical-align: 0px;">**</sup></td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;"></td>
 <td style="padding-right: 12px; border: none;">(0.36)</td>
-<td style="padding-right: 12px; border: none;">(0.36)</td>
-<td style="padding-right: 12px; border: none;">(0.36)</td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;">psi(fire_dist)</td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">-0.70<sup style="vertical-align: 0px;">**</sup></td>
-</tr>
-<tr>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;"></td>
-<td style="padding-right: 12px; border: none;">(0.22)</td>
 </tr>
 <tr>
 <td style="border-top: 1px solid black;">Log Likelihood</td>
-<td style="border-top: 1px solid black;">-123.99</td>
-<td style="border-top: 1px solid black;">-125.19</td>
-<td style="border-top: 1px solid black;">-126.43</td>
+<td style="border-top: 1px solid black;">-130.16</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">AICc</td>
-<td style="padding-right: 12px; border: none;">260.81</td>
-<td style="padding-right: 12px; border: none;">260.97</td>
-<td style="padding-right: 12px; border: none;">261.25</td>
+<td style="padding-right: 12px; border: none;">273.14</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">Delta</td>
 <td style="padding-right: 12px; border: none;">0.00</td>
-<td style="padding-right: 12px; border: none;">0.16</td>
-<td style="padding-right: 12px; border: none;">0.44</td>
 </tr>
 <tr>
 <td style="padding-right: 12px; border: none;">Weight</td>
-<td style="padding-right: 12px; border: none;">0.37</td>
-<td style="padding-right: 12px; border: none;">0.34</td>
-<td style="padding-right: 12px; border: none;">0.29</td>
+<td style="padding-right: 12px; border: none;">1.00</td>
 </tr>
 <tr>
 <td style="border-bottom: 2px solid black;">Num. obs.</td>
-<td style="border-bottom: 2px solid black;">108</td>
-<td style="border-bottom: 2px solid black;">108</td>
-<td style="border-bottom: 2px solid black;">108</td>
+<td style="border-bottom: 2px solid black;">111</td>
 </tr>
 <tr>
-<td style="padding-right: 12px; border: none;" colspan="5"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
+<td style="padding-right: 12px; border: none;" colspan="3"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
 </tr>
 </table>

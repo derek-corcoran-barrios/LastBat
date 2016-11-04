@@ -11,8 +11,8 @@ dfm <- melt(occupancytable2, id.vars="species")
 dfm$sign <- ifelse(dfm$value > 0 , "+" , ifelse(dfm$value < 0, "-", ""))
 
 
-p <- ggplot(dfm, aes(x=variable, y=species)) +  geom_tile(aes(fill=value), colour = "black") + scale_fill_gradient2(low = "blue", high = 'red', name="Strength") +
-theme(axis.text.x = element_text(angle = 90, hjust = 0.5, vjust = 0.5))+ geom_text(aes(label=sign), color = 'black')
+p <- ggplot(dfm, aes(x=variable, y=species)) +  geom_tile(aes(fill=value), colour = "black") + scale_fill_gradient2(low = "blue", high = 'red', name="Strength") + theme(axis.text.x = element_text(angle = 50, hjust = 1, vjust = 1))
++ geom_text(aes(label=sign), color = 'black')
 p
 
 Detectiontable2 <- read.csv("~/LastBat/Detectiontable2.csv")

@@ -126,9 +126,4 @@ firebats2<- subset(firebats, df$order)
 library(sp)
 library(latticeExtra)
 library(viridis)
-levelplot(firebats2[[1]], col.regions = magma(99), colorkey = list(space = "bottom"))+ 
-  layer({
-    SpatialPolygonsRescale(layout.north.arrow(type = 1),
-                           offset = c(-121.5,40.1),
-                           scale = 0.1)
-  })
+levelplot(firebats2, col.regions = magma(99), colorkey = list(space = "bottom"))

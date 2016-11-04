@@ -51,7 +51,6 @@ Grandtotal <- Grandtotal[,-1]
 
 sampling.cov<- Grandtotal[,53:83]
 sampling.cov <- sampling.cov[,-c(7,8,17:22)]
-saveRDS(sampling.cov[,15:23], "sampling.cov.rds")
 #This next step changes according to the models
 preprocov <-preProcess(sampling.cov[,15:23], method = c("center","scale"))
 sampling.cov<-predict(preprocov, sampling.cov[,15:23])
@@ -869,7 +868,6 @@ names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA",
 
 library(viridis)
 levelplot(FireBats, col.regions = magma(99), colorkey = list(space = "bottom"))
-saveRDS(FireBats,"firebats.rds")
 ```
 
 
@@ -926,7 +924,6 @@ summarised_df2<-summarise_each(grouped_df1,funs(mean=mean(., na.rm = TRUE),std_e
 
 kable(summarised_df2)
 
-saveRDS(summarised_df1, "summarised_df1.rds")
 # Define the top and bottom of the errorbars
 limits <- aes(ymax = mean + std_error, ymin=mean-std_error)
 
@@ -1338,6 +1335,8 @@ saveRDS(best2.My.Ev2, "best2.My.Ev2.rds")
 
 saveRDS(best2.My.Ca2, "best2.My.Ca2.rds")
 
+saveRDS(best2.My.Ci2, "best2.My.Ci2.rds")
+
 saveRDS(best2.La.No2, "best2.La.No2.rds")
 
 saveRDS(best2.La.Ci2, "best2.La.Ci2.rds")
@@ -1346,8 +1345,17 @@ saveRDS(best2.La.Bl2, "best2.La.Bl2.rds")
 
 saveRDS(best2.Eu.Ma2, "best2.Eu.Ma2.rds")
 
+saveRDS(best2.Eu.Pe2, "best2.Eu.Pe2.rds")
+
 saveRDS(best2.Ep.Fu2, "best2.Ep.Fu2.rds")
 
+saveRDS(best2.An.Pa2, "best2.An.Pa2.rds")
+
+saveRDS(sampling.cov, "sampling.cov.rds")
+
+saveRDS(FireBats,"firebats.rds")
+
+saveRDS(summarised_df1, "summarised_df1.rds")
 
 
 ```

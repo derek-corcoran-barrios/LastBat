@@ -12,11 +12,14 @@ best2.My.Yu2 <- readRDS("best2.My.Yu2.rds")
 best2.My.Lu2 <- readRDS("best2.My.Lu2.rds")
 best2.My.Ev2 <- readRDS("best2.My.Ev2.rds")
 best2.My.Ca2 <- readRDS("best2.My.Ca2.rds")
+best2.My.Ci2 <- readRDS("best2.My.Ci2.rds")
 best2.La.No2 <- readRDS("best2.La.No2.rds")
 best2.La.Ci2 <- readRDS("best2.La.Ci2.rds")
 best2.La.Bl2 <- readRDS("best2.La.Bl2.rds")
 best2.Eu.Ma2 <- readRDS("best2.Eu.Ma2.rds")
+best2.Eu.Pe2 <- readRDS("best2.Eu.Pe2.rds")
 best2.Ep.Fu2 <- readRDS("best2.Ep.Fu2.rds")
+best2.An.Pa2 <- readRDS("best2.An.Pa2.rds")
 
 
 
@@ -288,3 +291,153 @@ epfuresp <- ggplot(EdgeOutput, aes(x = Distance, y = Occupancy))  + geom_ribbon(
 library(gridExtra)
 
 grid.arrange(mythresp, tabrresp, myevresp, mycaresp, lanoresp, laciresp, lablresp, epfuresp, eumaresp, myluresp, myyuresp, paheresp, ncol = 3)
+
+
+grid.arrange(mythresp, tabrresp, myevresp, laciresp, lablresp, myluresp, myyuresp, paheresp, ncol = 3)
+
+
+
+#####################################################################################################
+#####################################Fire Response Plots##########################
+############################################################################################
+
+output$fire_dist <- 0
+
+output$Burn.intensity.Canopy <-seq(from = min(sampling.cov$Burn.intensity.Canopy, na.rm = TRUE), to = max(sampling.cov$Burn.intensity.Canopy, na.rm = TRUE), length.out = 65)
+
+output$Burn.intensity.basal <-seq(from = min(sampling.cov$Burn.intensity.basal, na.rm = TRUE), to = max(sampling.cov$Burn.intensity.basal, na.rm = TRUE), length.out = 65)
+
+#Tabr
+
+BurnIntPredicted <- predict(best2.Ta.Br2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+tabrfireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "TABR") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+
+#Myyu
+
+BurnIntPredicted <- predict(best2.My.Yu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+myyufireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYYU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+
+#Mylu
+
+BurnIntPredicted <- predict(best2.My.Lu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+mylufireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYLU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Myci
+
+BurnIntPredicted <- predict(best2.My.Ci2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+mycifireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYCI") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Lano
+
+BurnIntPredicted <- predict(best2.La.No2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+lanofireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "LANO") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Eupe
+
+BurnIntPredicted <- predict(best2.Eu.Pe2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+eupefireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "EUPE") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Euma
+
+BurnIntPredicted <- predict(best2.Eu.Ma2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+eumafireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "EUMA") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Epfu
+
+BurnIntPredicted <- predict(best2.Ep.Fu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+epfufireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "EPFU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+#Anpa
+
+BurnIntPredicted <- predict(best2.An.Pa2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BurnIntPredicted)
+
+anpafireresp <- ggplot(OutputInt, aes(x = Burn.intensity.Canopy, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "ANPA") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Burn Intensity") + ylab("Occupancy")
+
+
+grid.arrange(mycifireresp, anpafireresp, lanofireresp, mylufireresp, tabrfireresp, epfufireresp, myyufireresp, eumafireresp, eupefireresp, ncol = 3)
+
+grid.arrange(tabrfireresp, myyufireresp, mylufireresp, mycifireresp, a, eupefireresp, anpafireresp, grid.text("SOMETHING NICE AND BIG",gp=gpar(fontsize=20, col="red"), x = 0.5, y =0.2), top = "title", ncol = 3)
+
+
