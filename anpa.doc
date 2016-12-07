@@ -1,0 +1,112 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<table cellspacing="0" align="center" style="border: none;">
+<caption align="bottom" style="margin-top:0.3em;">Statistical models</caption>
+<tr>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b></b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 1</b></th>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Int)</td>
+<td style="padding-right: 12px; border: none;">-81.70</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(90.98)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(CANOPY.COVER)</td>
+<td style="padding-right: 12px; border: none;">-305.69</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(324.79)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(DOWN.WOOD)</td>
+<td style="padding-right: 12px; border: none;">128.54</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(139.51)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(GRASS)</td>
+<td style="padding-right: 12px; border: none;">-64.63</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(71.54)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(LEAF.LITTER)</td>
+<td style="padding-right: 12px; border: none;">202.84</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(218.71)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(NAKED.SOIL)</td>
+<td style="padding-right: 12px; border: none;">59.98</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(87.23)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Sd)</td>
+<td style="padding-right: 12px; border: none;">35.40</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(38.30)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(WOODY)</td>
+<td style="padding-right: 12px; border: none;">64.96</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(78.59)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Int)</td>
+<td style="padding-right: 12px; border: none;">-1.99<sup style="vertical-align: 0px;">***</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.31)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Julian)</td>
+<td style="padding-right: 12px; border: none;">-0.65<sup style="vertical-align: 0px;">*</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.32)</td>
+</tr>
+<tr>
+<td style="border-top: 1px solid black;">Log Likelihood</td>
+<td style="border-top: 1px solid black;">-37.22</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">AICc</td>
+<td style="padding-right: 12px; border: none;">96.61</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Delta</td>
+<td style="padding-right: 12px; border: none;">0.00</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Weight</td>
+<td style="padding-right: 12px; border: none;">0.03</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid black;">Num. obs.</td>
+<td style="border-bottom: 2px solid black;">112</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;" colspan="3"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
+</tr>
+</table>
