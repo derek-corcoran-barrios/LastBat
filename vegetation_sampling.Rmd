@@ -526,7 +526,7 @@ library(texreg)
 htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
 ```
 
-```{r}
+```{r, echo=FALSE}
 
 panel.hist <- function(x, ...)
 {
@@ -550,4 +550,326 @@ panel.cor <- function(x, y, digits = 2, prefix = "", cex.cor, ...)
 }
 
 pairs(sampling.cov, lower.panel = panel.smooth, upper.panel = panel.cor, diag.panel = panel.hist)
+```
+
+
+```{r, echo=FALSE}
+sampling.cov <- readRDS("sampling.cov.rds")
+
+#generate a dataframe filed with means called output
+means <- colMeans(sampling.cov, na.rm = TRUE)
+output <- matrix(ncol=ncol(sampling.cov), nrow=65)
+
+for(i in 1:ncol(sampling.cov)){
+  output[,i] <-  rep(means[i], times = 65)
+  
+}
+output <- data.frame(output)
+colnames(output) <- colnames(sampling.cov)
+
+##generate max min matrix
+
+maxmin <- matrix(ncol=ncol(sampling.cov), nrow=2)
+rownames(maxmin) <- c("max", "min")
+colnames(maxmin) <- colnames(sampling.cov)
+
+for(i in 1:ncol(sampling.cov)){
+  maxmin[1,i] <-  max(sampling.cov[,i], na.rm = TRUE)
+  maxmin[2,i] <-  min(sampling.cov[,i], na.rm = TRUE)
+}
+
+```
+
+#Cannopy cover
+```{r, cache=TRUE, echo=FALSE}
+
+output$CANOPY.COVER <-seq(from = min(sampling.cov$CANOPY.COVER, na.rm = TRUE), to = max(sampling.cov$CANOPY.COVER, na.rm = TRUE), length.out = 65)
+
+#Tabr
+
+CanopyPredicted <- predict(best2.Ta.Br2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+tabrcanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "TABR") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+tabrcanopyresp
+
+```
+
+```{r, cache=TRUE, echo=FALSE}
+
+#Myyu
+
+CanopyPredicted <- predict(best2.My.Yu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+myyucanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYYU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+
+#Mylu
+
+CanopyPredicted <- predict(best2.My.Lu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+mylucanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYLU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Myci
+
+CanopyPredicted <- predict(best2.My.Ci2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+mycicanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYCI") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Lano
+
+CanopyPredicted <- predict(best2.La.No2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+lanocanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "LANO") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Eupe
+
+CanopyPredicted <- predict(best2.Eu.Pe2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+eupecanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "EUPE") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+
+#Epfu
+
+CanopyPredicted <- predict(best2.Ep.Fu2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+epfucanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "EPFU") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Anpa
+
+CanopyPredicted <- predict(best2.An.Pa2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+anpacanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "ANPA") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Myev
+
+CanopyPredicted <- predict(best2.My.Ev2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+myevcanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYEV") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+#Myth
+
+CanopyPredicted <- predict(best2.My.Th2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, CanopyPredicted)
+
+mythcanopyresp <- ggplot(OutputInt, aes(x = CANOPY.COVER, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYTH") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Canopy cover") + ylab("Occupancy")
+
+library(gridExtra)
+
+grid.arrange(epfucanopyresp, myevcanopyresp, mylucanopyresp, lanocanopyresp, myyucanopyresp,anpacanopyresp,eupecanopyresp, mycicanopyresp,  mythcanopyresp, ncol = 3)
+
+
+```
+
+
+#Basal Area
+
+```{r, echo=FALSE}
+sampling.cov <- readRDS("sampling.cov.rds")
+
+#generate a dataframe filed with means called output
+means <- colMeans(sampling.cov, na.rm = TRUE)
+output <- matrix(ncol=ncol(sampling.cov), nrow=65)
+
+for(i in 1:ncol(sampling.cov)){
+  output[,i] <-  rep(means[i], times = 65)
+  
+}
+output <- data.frame(output)
+colnames(output) <- colnames(sampling.cov)
+
+##generate max min matrix
+
+maxmin <- matrix(ncol=ncol(sampling.cov), nrow=2)
+rownames(maxmin) <- c("max", "min")
+colnames(maxmin) <- colnames(sampling.cov)
+
+for(i in 1:ncol(sampling.cov)){
+  maxmin[1,i] <-  max(sampling.cov[,i], na.rm = TRUE)
+  maxmin[2,i] <-  min(sampling.cov[,i], na.rm = TRUE)
+}
+
+```
+
+```{r, cache=TRUE, echo=FALSE}
+
+output$AreaPerHa <-seq(from = min(sampling.cov$AreaPerHa, na.rm = TRUE), to = max(sampling.cov$AreaPerHa, na.rm = TRUE), length.out = 65)
+
+#Myci
+
+BasalPredicted <- predict(best2.My.Ci2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+mycibasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYCI") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+mycibasalresp
+
+```
+
+
+```{r, cache=TRUE, echo=FALSE}
+
+#Labl
+
+BasalPredicted <- predict(best2.La.Bl2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+lablbasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "LABL") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+
+#Myev
+
+BasalPredicted <- predict(best2.My.Ev2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+myevbasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYEV") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+#Myth
+
+BasalPredicted <- predict(best2.My.Th2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+mythbasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "MYTH") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+#Pahe
+
+BasalPredicted <- predict(best2.Pa.He2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+pahebasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "PAHE") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+#Laci
+
+BasalPredicted <- predict(best2.La.Ci2, type = "state", predict(preprocov, output))
+OutputInt <- cbind(output, BasalPredicted)
+
+lacibasalresp <- ggplot(OutputInt, aes(x = AreaPerHa, y = Predicted))  + geom_ribbon(aes(ymax = upper, ymin = lower), alpha = 0.5) + geom_line(size = 1)+ ylim(c(0,1))+ labs(title = "LACI") + theme(
+  panel.background = element_rect(fill = "transparent",colour = NA), # or theme_blank()
+  panel.grid.minor = element_blank(),
+  panel.grid.major = element_blank(),
+  plot.background = element_rect(fill = "transparent",colour = NA)
+)+
+  theme(axis.line.x = element_line(color="black", size = 0.5),
+        axis.line.y = element_line(color="black", size = 0.5))+ xlab("Basal Area") + ylab("Occupancy")
+
+
+library(gridExtra)
+
+grid.arrange(myevbasalresp, lacibasalresp, lablbasalresp, mycibasalresp, mythbasalresp, pahebasalresp,  ncol = 3)
+
+
 ```
