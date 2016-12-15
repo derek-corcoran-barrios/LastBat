@@ -1,1467 +1,968 @@
-<html xmlns:v="urn:schemas-microsoft-com:vml"
-xmlns:o="urn:schemas-microsoft-com:office:office"
-xmlns:w="urn:schemas-microsoft-com:office:word"
-xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
-xmlns="http://www.w3.org/TR/REC-html40">
 
-<head>
-<meta http-equiv=Content-Type content="text/html; charset=us-ascii">
-<meta name=ProgId content=Word.Document>
-<meta name=Generator content="Microsoft Word 15">
-<meta name=Originator content="Microsoft Word 15">
-<link rel=File-List href="coto_files/filelist.xml">
-<!--[if gte mso 9]><xml>
- <o:DocumentProperties>
-  <o:Author>Corcoran Barrios, Derek A.</o:Author>
-  <o:LastAuthor>Corcoran Barrios, Derek A.</o:LastAuthor>
-  <o:Revision>2</o:Revision>
-  <o:TotalTime>2</o:TotalTime>
-  <o:Created>2016-12-07T22:55:00Z</o:Created>
-  <o:LastSaved>2016-12-07T22:59:00Z</o:LastSaved>
-  <o:Pages>1</o:Pages>
-  <o:Words>223</o:Words>
-  <o:Characters>1277</o:Characters>
-  <o:Company>University of Missouri</o:Company>
-  <o:Lines>10</o:Lines>
-  <o:Paragraphs>2</o:Paragraphs>
-  <o:CharactersWithSpaces>1498</o:CharactersWithSpaces>
-  <o:Version>15.00</o:Version>
- </o:DocumentProperties>
- <o:OfficeDocumentSettings>
-  <o:AllowPNG/>
- </o:OfficeDocumentSettings>
-</xml><![endif]-->
-<link rel=themeData href="coto_files/themedata.thmx">
-<link rel=colorSchemeMapping href="coto_files/colorschememapping.xml">
-<!--[if gte mso 9]><xml>
- <w:WordDocument>
-  <w:View>Print</w:View>
-  <w:GrammarState>Clean</w:GrammarState>
-  <w:TrackMoves>false</w:TrackMoves>
-  <w:TrackFormatting/>
-  <w:ValidateAgainstSchemas/>
-  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
-  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
-  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
-  <w:DoNotPromoteQF/>
-  <w:LidThemeOther>EN-US</w:LidThemeOther>
-  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
-  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
-  <w:Compatibility>
-   <w:BreakWrappedTables/>
-   <w:SplitPgBreakAndParaMark/>
-  </w:Compatibility>
-  <m:mathPr>
-   <m:mathFont m:val="Cambria Math"/>
-   <m:brkBin m:val="before"/>
-   <m:brkBinSub m:val="&#45;-"/>
-   <m:smallFrac m:val="off"/>
-   <m:dispDef/>
-   <m:lMargin m:val="0"/>
-   <m:rMargin m:val="0"/>
-   <m:defJc m:val="centerGroup"/>
-   <m:wrapIndent m:val="1440"/>
-   <m:intLim m:val="subSup"/>
-   <m:naryLim m:val="undOvr"/>
-  </m:mathPr></w:WordDocument>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
-  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
-  LatentStyleCount="371">
-  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
-  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
-  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index 9"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 1"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 2"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 3"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 4"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 5"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 6"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 7"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 8"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" Name="toc 9"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="header"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footer"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="index heading"/>
-  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of figures"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="envelope return"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="footnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="line number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="page number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote reference"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="endnote text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="table of authorities"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="macro"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="toa heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Bullet 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Number 5"/>
-  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Closing"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Signature"/>
-  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="List Continue 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Message Header"/>
-  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Salutation"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Date"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text First Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Note Heading"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Body Text Indent 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Block Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Hyperlink"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="FollowedHyperlink"/>
-  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
-  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Document Map"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Plain Text"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="E-mail Signature"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Top of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Bottom of Form"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal (Web)"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Acronym"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Address"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Cite"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Code"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Definition"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Keyboard"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Preformatted"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Sample"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Typewriter"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="HTML Variable"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Normal Table"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="annotation subject"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="No List"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Outline List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Simple 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Classic 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Colorful 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Columns 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Grid 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 4"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 5"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 6"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 7"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table List 8"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table 3D effects 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Contemporary"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Elegant"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Professional"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Subtle 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 2"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Web 3"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Balloon Text"/>
-  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
-  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
-   Name="Table Theme"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
-  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
-  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
-  <w:LsdException Locked="false" Priority="34" QFormat="true"
-   Name="List Paragraph"/>
-  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
-  <w:LsdException Locked="false" Priority="30" QFormat="true"
-   Name="Intense Quote"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
-  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
-  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
-  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
-  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
-  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
-  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
-  <w:LsdException Locked="false" Priority="19" QFormat="true"
-   Name="Subtle Emphasis"/>
-  <w:LsdException Locked="false" Priority="21" QFormat="true"
-   Name="Intense Emphasis"/>
-  <w:LsdException Locked="false" Priority="31" QFormat="true"
-   Name="Subtle Reference"/>
-  <w:LsdException Locked="false" Priority="32" QFormat="true"
-   Name="Intense Reference"/>
-  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
-  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
-   UnhideWhenUsed="true" Name="Bibliography"/>
-  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
-   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
-  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
-  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
-  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
-  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
-  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
-  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
-  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="Grid Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="Grid Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="Grid Table 7 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
-  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
-  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 1"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 1"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 2"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 2"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 3"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 3"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 4"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 4"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 5"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 5"/>
-  <w:LsdException Locked="false" Priority="46"
-   Name="List Table 1 Light Accent 6"/>
-  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
-  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
-  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
-  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
-  <w:LsdException Locked="false" Priority="51"
-   Name="List Table 6 Colorful Accent 6"/>
-  <w:LsdException Locked="false" Priority="52"
-   Name="List Table 7 Colorful Accent 6"/>
- </w:LatentStyles>
-</xml><![endif]-->
-<style>
-<!--
- /* Font Definitions */
- @font-face
-	{font-family:"Cambria Math";
-	panose-1:2 4 5 3 5 4 6 3 2 4;
-	mso-font-charset:0;
-	mso-generic-font-family:roman;
-	mso-font-pitch:variable;
-	mso-font-signature:-536870145 1107305727 0 0 415 0;}
- /* Style Definitions */
- p.MsoNormal, li.MsoNormal, div.MsoNormal
-	{mso-style-unhide:no;
-	mso-style-qformat:yes;
-	mso-style-parent:"";
-	margin:0in;
-	margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:12.0pt;
-	font-family:"Times New Roman",serif;
-	mso-fareast-font-family:"Times New Roman";
-	mso-fareast-theme-font:minor-fareast;}
-.MsoChpDefault
-	{mso-style-type:export-only;
-	mso-default-props:yes;
-	font-size:10.0pt;
-	mso-ansi-font-size:10.0pt;
-	mso-bidi-font-size:10.0pt;}
-@page WordSection1
-	{size:8.5in 11.0in;
-	margin:1.0in 1.0in 1.0in 1.0in;
-	mso-header-margin:.5in;
-	mso-footer-margin:.5in;
-	mso-paper-source:0;}
-div.WordSection1
-	{page:WordSection1;}
--->
-</style>
-<!--[if gte mso 10]>
-<style>
- /* Style Definitions */
- table.MsoNormalTable
-	{mso-style-name:"Table Normal";
-	mso-tstyle-rowband-size:0;
-	mso-tstyle-colband-size:0;
-	mso-style-noshow:yes;
-	mso-style-priority:99;
-	mso-style-parent:"";
-	mso-padding-alt:0in 5.4pt 0in 5.4pt;
-	mso-para-margin:0in;
-	mso-para-margin-bottom:.0001pt;
-	mso-pagination:widow-orphan;
-	font-size:10.0pt;
-	font-family:"Times New Roman",serif;}
-</style>
-<![endif]--><!--[if gte mso 9]><xml>
- <o:shapedefaults v:ext="edit" spidmax="1026"/>
-</xml><![endif]--><!--[if gte mso 9]><xml>
- <o:shapelayout v:ext="edit">
-  <o:idmap v:ext="edit" data="1"/>
- </o:shapelayout></xml><![endif]-->
-</head>
-
-<body lang=EN-US style='tab-interval:.5in'>
-
-<div class=WordSection1>
-
-<div align=center>
-
-<table class=MsoNormalTable border=0 cellspacing=0 cellpadding=0 width=692
- style='width:415.3pt;mso-cellspacing:0in;mso-yfti-tbllook:1184'>
- <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  1<o:p></o:p></span></b></p>
-  </td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  2<o:p></o:p></span></b></p>
-  </td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  3<o:p></o:p></span></b></p>
-  </td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  4<o:p></o:p></span></b></p>
-  </td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  5<o:p></o:p></span></b></p>
-  </td>
-  <td style='border-top:solid black 1.5pt;border-left:none;border-bottom:solid black 1.0pt;
-  border-right:none;mso-border-top-alt:solid black 1.5pt;mso-border-bottom-alt:
-  solid black .75pt;padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><b><span style='mso-fareast-font-family:"Times New Roman"'>Model
-  6<o:p></o:p></span></b></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:1'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(Int)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-33.58<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-45.18<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-17.98<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-39.74<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-41.86<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-30.21<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:2'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(193.27)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(22.96)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(29.56)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(59.11)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(46.86)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:3'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(count)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-72.31<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:4'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(35.92)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:5'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(DOWN.WOOD)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>113.21<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>48.44<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>84.83<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>82.63<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>158.36<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>67.14<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:6'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(162.70)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(89.73)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(61.32)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(212.35)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(101.02)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:7'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(GRASS)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>37.31<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>132.41<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>44.22<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>100.76<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:8'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(6.70)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(308.06)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(33.02)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(144.74)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:9'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(Sd)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>64.68<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>96.23<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>37.47<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>92.00<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>47.22<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>106.75<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:10'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(44.17)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(305.25)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(42.87)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(67.62)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(57.62)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(155.45)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:11'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(WOODY)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>29.91<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>14.30<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:12'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(3.47)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(10.29)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:13'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>p(Int)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.43<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.37<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.54<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.40<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.44<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-2.45<sup>***</sup><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:14'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.39)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.41)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.41)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.40)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.41)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.40)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:15'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>p(Meanhum)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.48<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.42<sup>**</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.63<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.54<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.57<sup>***</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.55<sup>***</sup><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:16'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.44)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.46)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.46)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.45)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.46)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.45)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:17'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>p(Mintemp)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.89<sup>**</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.09<sup>**</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.85<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.85<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.79<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.15<sup>**</sup><o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:18'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.34)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.39)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.34)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.34)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.35)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.38)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:19'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>p(sdhum)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.85<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.80<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.80<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.86<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.83<sup>*</sup><o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.68<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:20'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.37)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.38)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.35)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.38)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.35)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(0.37)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:21'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(CANOPY.COVER)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>42.96<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>8.80<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:22'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(103.32)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(17.25)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:23'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(NAKED.SOIL)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>76.45<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>31.05<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:24'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(222.66)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(44.59)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:25'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(AreaPerHa)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-80.66<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-64.12<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-128.51<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:26'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(91.68)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(46.57)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(164.66)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:27'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(Average)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>71.12<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>125.30<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-75.74<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:28'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(74.24)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(167.59)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(111.60)<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:29'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(LEAF.LITTER)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-22.89<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-51.86<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:30'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(24.67)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(67.23)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:31'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(HERBACIOUS)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-32.30<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:32'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>(24.96)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:33'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>psi(ROCKY)<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:34'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'></td>
- </tr>
- <tr style='mso-yfti-irow:35'>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Log
-  Likelihood<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-36.30<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-36.42<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-36.43<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-35.42<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-35.61<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-top:solid black 1.0pt;mso-border-top-alt:solid black .75pt;
-  padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>-36.85<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:36'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>AICc<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>94.77<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>95.02<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>95.03<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>95.48<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>95.86<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>95.88<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:37'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Delta<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.00<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.25<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.26<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.70<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.09<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>1.11<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:38'>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Weight<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.09<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.08<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.08<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.06<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.05<o:p></o:p></span></p>
-  </td>
-  <td style='padding:.75pt 9.0pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>0.05<o:p></o:p></span></p>
-  </td>
- </tr>
- <tr style='mso-yfti-irow:39;mso-yfti-lastrow:yes'>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>Num.
-  obs.<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
-  <td style='border:none;border-bottom:solid black 1.5pt;padding:.75pt .75pt .75pt .75pt'>
-  <p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'>112<o:p></o:p></span></p>
-  </td>
- </tr>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<table cellspacing="0" align="center" style="border: none;">
+<caption align="bottom" style="margin-top:0.3em;">Statistical models</caption>
+<tr>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b></b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 1</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 2</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 3</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 4</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 5</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 6</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 7</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 8</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 9</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 10</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 11</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 12</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 13</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 14</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 15</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 16</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 17</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 18</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 19</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 20</b></th>
+<th style="text-align: left; border-top: 2px solid black; border-bottom: 1px solid black; padding-right: 12px;"><b>Model 21</b></th>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Int)</td>
+<td style="padding-right: 12px; border: none;">-33.58</td>
+<td style="padding-right: 12px; border: none;">-45.18</td>
+<td style="padding-right: 12px; border: none;">-17.98</td>
+<td style="padding-right: 12px; border: none;">-39.74</td>
+<td style="padding-right: 12px; border: none;">-41.86</td>
+<td style="padding-right: 12px; border: none;">-30.21</td>
+<td style="padding-right: 12px; border: none;">-23.84</td>
+<td style="padding-right: 12px; border: none;">-45.80</td>
+<td style="padding-right: 12px; border: none;">-39.45</td>
+<td style="padding-right: 12px; border: none;">-76.79</td>
+<td style="padding-right: 12px; border: none;">-47.32</td>
+<td style="padding-right: 12px; border: none;">-17.72</td>
+<td style="padding-right: 12px; border: none;">-41.64</td>
+<td style="padding-right: 12px; border: none;">-17.14</td>
+<td style="padding-right: 12px; border: none;">-51.14</td>
+<td style="padding-right: 12px; border: none;">-24.32</td>
+<td style="padding-right: 12px; border: none;">-43.01</td>
+<td style="padding-right: 12px; border: none;">-10.73</td>
+<td style="padding-right: 12px; border: none;">-43.97</td>
+<td style="padding-right: 12px; border: none;">-15.42</td>
+<td style="padding-right: 12px; border: none;">-2.62</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(193.27)</td>
+<td style="padding-right: 12px; border: none;">(22.96)</td>
+<td style="padding-right: 12px; border: none;">(29.56)</td>
+<td style="padding-right: 12px; border: none;">(59.11)</td>
+<td style="padding-right: 12px; border: none;">(46.86)</td>
+<td style="padding-right: 12px; border: none;">(34.45)</td>
+<td style="padding-right: 12px; border: none;">(50.73)</td>
+<td style="padding-right: 12px; border: none;">(102.57)</td>
+<td style="padding-right: 12px; border: none;">(57.34)</td>
+<td style="padding-right: 12px; border: none;">(72.28)</td>
+<td style="padding-right: 12px; border: none;">(20.25)</td>
+<td style="padding-right: 12px; border: none;">(42.70)</td>
+<td style="padding-right: 12px; border: none;">(15.59)</td>
+<td style="padding-right: 12px; border: none;">(73.76)</td>
+<td style="padding-right: 12px; border: none;">(13.72)</td>
+<td style="padding-right: 12px; border: none;">(59.83)</td>
+<td style="padding-right: 12px; border: none;">(32.36)</td>
+<td style="padding-right: 12px; border: none;">(62.11)</td>
+<td style="padding-right: 12px; border: none;">(15.83)</td>
+<td style="padding-right: 12px; border: none;">(3.11)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(count)</td>
+<td style="padding-right: 12px; border: none;">-72.31<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-68.25</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-69.26</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-72.99</td>
+<td style="padding-right: 12px; border: none;">-117.81</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(35.92)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(76.23)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(70.65)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(86.82)</td>
+<td style="padding-right: 12px; border: none;">(191.06)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(DOWN.WOOD)</td>
+<td style="padding-right: 12px; border: none;">113.21</td>
+<td style="padding-right: 12px; border: none;">48.44</td>
+<td style="padding-right: 12px; border: none;">84.83</td>
+<td style="padding-right: 12px; border: none;">82.63</td>
+<td style="padding-right: 12px; border: none;">158.36</td>
+<td style="padding-right: 12px; border: none;">67.14</td>
+<td style="padding-right: 12px; border: none;">163.72</td>
+<td style="padding-right: 12px; border: none;">83.21</td>
+<td style="padding-right: 12px; border: none;">37.21</td>
+<td style="padding-right: 12px; border: none;">89.97</td>
+<td style="padding-right: 12px; border: none;">83.04</td>
+<td style="padding-right: 12px; border: none;">48.36</td>
+<td style="padding-right: 12px; border: none;">97.12</td>
+<td style="padding-right: 12px; border: none;">90.30</td>
+<td style="padding-right: 12px; border: none;">69.72</td>
+<td style="padding-right: 12px; border: none;">50.29</td>
+<td style="padding-right: 12px; border: none;">131.23</td>
+<td style="padding-right: 12px; border: none;">146.69</td>
+<td style="padding-right: 12px; border: none;">79.39</td>
+<td style="padding-right: 12px; border: none;">53.19</td>
+<td style="padding-right: 12px; border: none;">41.87</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(162.70)</td>
+<td style="padding-right: 12px; border: none;">(89.73)</td>
+<td style="padding-right: 12px; border: none;">(61.32)</td>
+<td style="padding-right: 12px; border: none;">(212.35)</td>
+<td style="padding-right: 12px; border: none;">(101.02)</td>
+<td style="padding-right: 12px; border: none;">(231.54)</td>
+<td style="padding-right: 12px; border: none;">(91.43)</td>
+<td style="padding-right: 12px; border: none;">(75.90)</td>
+<td style="padding-right: 12px; border: none;">(67.11)</td>
+<td style="padding-right: 12px; border: none;">(110.98)</td>
+<td style="padding-right: 12px; border: none;">(47.41)</td>
+<td style="padding-right: 12px; border: none;">(99.43)</td>
+<td style="padding-right: 12px; border: none;">(77.28)</td>
+<td style="padding-right: 12px; border: none;">(106.22)</td>
+<td style="padding-right: 12px; border: none;">(62.41)</td>
+<td style="padding-right: 12px; border: none;">(179.02)</td>
+<td style="padding-right: 12px; border: none;">(233.54)</td>
+<td style="padding-right: 12px; border: none;">(106.41)</td>
+<td style="padding-right: 12px; border: none;">(47.74)</td>
+<td style="padding-right: 12px; border: none;">(39.83)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(GRASS)</td>
+<td style="padding-right: 12px; border: none;">37.31<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">132.41</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">44.22</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">100.76</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">39.47</td>
+<td style="padding-right: 12px; border: none;">86.40</td>
+<td style="padding-right: 12px; border: none;">130.50</td>
+<td style="padding-right: 12px; border: none;">141.51</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">35.88</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">50.54</td>
+<td style="padding-right: 12px; border: none;">58.58</td>
+<td style="padding-right: 12px; border: none;">46.82</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">46.89</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(6.70)</td>
+<td style="padding-right: 12px; border: none;">(308.06)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(33.02)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(144.74)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(43.07)</td>
+<td style="padding-right: 12px; border: none;">(133.69)</td>
+<td style="padding-right: 12px; border: none;">(96.73)</td>
+<td style="padding-right: 12px; border: none;">(166.73)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(36.47)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(72.45)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(68.21)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(65.37)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Sd)</td>
+<td style="padding-right: 12px; border: none;">64.68</td>
+<td style="padding-right: 12px; border: none;">96.23</td>
+<td style="padding-right: 12px; border: none;">37.47</td>
+<td style="padding-right: 12px; border: none;">92.00</td>
+<td style="padding-right: 12px; border: none;">47.22</td>
+<td style="padding-right: 12px; border: none;">106.75</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">98.77</td>
+<td style="padding-right: 12px; border: none;">93.63</td>
+<td style="padding-right: 12px; border: none;">128.32</td>
+<td style="padding-right: 12px; border: none;">96.40</td>
+<td style="padding-right: 12px; border: none;">19.82</td>
+<td style="padding-right: 12px; border: none;">82.08</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">165.11</td>
+<td style="padding-right: 12px; border: none;">53.42<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">74.00</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">116.12</td>
+<td style="padding-right: 12px; border: none;">28.61</td>
+<td style="padding-right: 12px; border: none;">29.43</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(44.17)</td>
+<td style="padding-right: 12px; border: none;">(305.25)</td>
+<td style="padding-right: 12px; border: none;">(42.87)</td>
+<td style="padding-right: 12px; border: none;">(67.62)</td>
+<td style="padding-right: 12px; border: none;">(57.62)</td>
+<td style="padding-right: 12px; border: none;">(155.45)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(106.13)</td>
+<td style="padding-right: 12px; border: none;">(204.58)</td>
+<td style="padding-right: 12px; border: none;">(95.35)</td>
+<td style="padding-right: 12px; border: none;">(128.58)</td>
+<td style="padding-right: 12px; border: none;">(34.14)</td>
+<td style="padding-right: 12px; border: none;">(81.38)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(232.55)</td>
+<td style="padding-right: 12px; border: none;">(25.16)</td>
+<td style="padding-right: 12px; border: none;">(103.40)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(161.42)</td>
+<td style="padding-right: 12px; border: none;">(28.96)</td>
+<td style="padding-right: 12px; border: none;">(29.64)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(WOODY)</td>
+<td style="padding-right: 12px; border: none;">29.91<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">14.30</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">23.87</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">38.06</td>
+<td style="padding-right: 12px; border: none;">21.48</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(3.47)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(10.29)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(31.93)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(52.44)</td>
+<td style="padding-right: 12px; border: none;">(40.58)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Int)</td>
+<td style="padding-right: 12px; border: none;">-2.43<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.37<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.54<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.40<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.44<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.45<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.54<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.51<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.28<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.33<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.41<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.44<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.43<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.50<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.53<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.50<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.38<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.63<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.48<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.69<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">-2.73<sup style="vertical-align: 0px;">***</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.39)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.37)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Meanhum)</td>
+<td style="padding-right: 12px; border: none;">1.48<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.42<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.63<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.54<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.57<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.55<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.35<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.55<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.37<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.42<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.47<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.55<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.55<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.41<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.57<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.40<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.43<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.49<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.54<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.73<sup style="vertical-align: 0px;">***</sup></td>
+<td style="padding-right: 12px; border: none;">1.70<sup style="vertical-align: 0px;">***</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.44)</td>
+<td style="padding-right: 12px; border: none;">(0.46)</td>
+<td style="padding-right: 12px; border: none;">(0.46)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.46)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.44)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.46)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.43)</td>
+<td style="padding-right: 12px; border: none;">(0.46)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.42)</td>
+<td style="padding-right: 12px; border: none;">(0.45)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+<td style="padding-right: 12px; border: none;">(0.47)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(Mintemp)</td>
+<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.09<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">0.85<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.85<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.79<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">1.15<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">0.64<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">1.05<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.06<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.12<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">0.83<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.87<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.67<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.80<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">1.01<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">0.87<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.71<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.86<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.73<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.74<sup style="vertical-align: 0px;">*</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.39)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.33)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.39)</td>
+<td style="padding-right: 12px; border: none;">(0.39)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.33)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.32)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">p(sdhum)</td>
+<td style="padding-right: 12px; border: none;">0.85<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.80<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.80<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.86<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.83<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.68</td>
+<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.78<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.75</td>
+<td style="padding-right: 12px; border: none;">0.89<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.80<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.82<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.80<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.91<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">1.03<sup style="vertical-align: 0px;">**</sup></td>
+<td style="padding-right: 12px; border: none;">0.73<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.84<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.85<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.92<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.82<sup style="vertical-align: 0px;">*</sup></td>
+<td style="padding-right: 12px; border: none;">0.78<sup style="vertical-align: 0px;">*</sup></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(0.37)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.37)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.40)</td>
+<td style="padding-right: 12px; border: none;">(0.41)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.36)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.37)</td>
+<td style="padding-right: 12px; border: none;">(0.34)</td>
+<td style="padding-right: 12px; border: none;">(0.38)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+<td style="padding-right: 12px; border: none;">(0.35)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(CANOPY.COVER)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">42.96</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">8.80</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">36.57</td>
+<td style="padding-right: 12px; border: none;">34.98</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">51.46</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(103.32)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(17.25)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(60.59)</td>
+<td style="padding-right: 12px; border: none;">(26.27)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(87.95)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(NAKED.SOIL)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">76.45</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">31.05</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">51.94</td>
+<td style="padding-right: 12px; border: none;">94.47</td>
+<td style="padding-right: 12px; border: none;">56.82</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">27.26</td>
+<td style="padding-right: 12px; border: none;">5.88</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-7.41</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(222.66)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(44.59)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(90.24)</td>
+<td style="padding-right: 12px; border: none;">(70.50)</td>
+<td style="padding-right: 12px; border: none;">(81.99)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(16.52)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(12.13)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(AreaPerHa)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-80.66</td>
+<td style="padding-right: 12px; border: none;">-64.12</td>
+<td style="padding-right: 12px; border: none;">-128.51</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-115.04</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-43.68</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-66.67</td>
+<td style="padding-right: 12px; border: none;">-134.43</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-81.28</td>
+<td style="padding-right: 12px; border: none;">-52.45</td>
+<td style="padding-right: 12px; border: none;">-45.61</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(91.68)</td>
+<td style="padding-right: 12px; border: none;">(46.57)</td>
+<td style="padding-right: 12px; border: none;">(164.66)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(158.30)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(41.90)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(57.30)</td>
+<td style="padding-right: 12px; border: none;">(197.82)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(113.23)</td>
+<td style="padding-right: 12px; border: none;">(47.50)</td>
+<td style="padding-right: 12px; border: none;">(42.78)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(Average)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">71.12</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">125.30</td>
+<td style="padding-right: 12px; border: none;">-75.74</td>
+<td style="padding-right: 12px; border: none;">189.36</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-51.63</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">42.75</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">118.95</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">154.10</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">51.03</td>
+<td style="padding-right: 12px; border: none;">43.33</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(74.24)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(167.59)</td>
+<td style="padding-right: 12px; border: none;">(111.60)</td>
+<td style="padding-right: 12px; border: none;">(266.62)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(145.19)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(59.14)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(100.94)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(234.06)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(45.71)</td>
+<td style="padding-right: 12px; border: none;">(40.93)</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(LEAF.LITTER)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-22.89</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-51.86</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-48.32</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">26.02</td>
+<td style="padding-right: 12px; border: none;">-17.00</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-26.29</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(24.67)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(67.23)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(71.93)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(28.93)</td>
+<td style="padding-right: 12px; border: none;">(19.09)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(21.62)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(HERBACIOUS)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-32.30</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-49.14</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-15.11</td>
+<td style="padding-right: 12px; border: none;">-28.19</td>
+<td style="padding-right: 12px; border: none;">-12.67</td>
+<td style="padding-right: 12px; border: none;">-75.80</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">-58.10</td>
+<td style="padding-right: 12px; border: none;">-15.90</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(24.96)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(53.90)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(20.74)</td>
+<td style="padding-right: 12px; border: none;">(27.93)</td>
+<td style="padding-right: 12px; border: none;">(13.11)</td>
+<td style="padding-right: 12px; border: none;">(109.25)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(83.36)</td>
+<td style="padding-right: 12px; border: none;">(17.40)</td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">psi(ROCKY)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">13.66</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;">(11.41)</td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+<td style="padding-right: 12px; border: none;"></td>
+</tr>
+<tr>
+<td style="border-top: 1px solid black;">Log Likelihood</td>
+<td style="border-top: 1px solid black;">-36.30</td>
+<td style="border-top: 1px solid black;">-36.42</td>
+<td style="border-top: 1px solid black;">-36.43</td>
+<td style="border-top: 1px solid black;">-35.42</td>
+<td style="border-top: 1px solid black;">-35.61</td>
+<td style="border-top: 1px solid black;">-36.85</td>
+<td style="border-top: 1px solid black;">-38.11</td>
+<td style="border-top: 1px solid black;">-36.93</td>
+<td style="border-top: 1px solid black;">-35.74</td>
+<td style="border-top: 1px solid black;">-35.78</td>
+<td style="border-top: 1px solid black;">-37.03</td>
+<td style="border-top: 1px solid black;">-35.85</td>
+<td style="border-top: 1px solid black;">-35.86</td>
+<td style="border-top: 1px solid black;">-37.13</td>
+<td style="border-top: 1px solid black;">-35.97</td>
+<td style="border-top: 1px solid black;">-38.41</td>
+<td style="border-top: 1px solid black;">-35.98</td>
+<td style="border-top: 1px solid black;">-38.43</td>
+<td style="border-top: 1px solid black;">-35.99</td>
+<td style="border-top: 1px solid black;">-37.24</td>
+<td style="border-top: 1px solid black;">-38.48</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">AICc</td>
+<td style="padding-right: 12px; border: none;">94.77</td>
+<td style="padding-right: 12px; border: none;">95.02</td>
+<td style="padding-right: 12px; border: none;">95.03</td>
+<td style="padding-right: 12px; border: none;">95.48</td>
+<td style="padding-right: 12px; border: none;">95.86</td>
+<td style="padding-right: 12px; border: none;">95.88</td>
+<td style="padding-right: 12px; border: none;">95.98</td>
+<td style="padding-right: 12px; border: none;">96.05</td>
+<td style="padding-right: 12px; border: none;">96.12</td>
+<td style="padding-right: 12px; border: none;">96.20</td>
+<td style="padding-right: 12px; border: none;">96.23</td>
+<td style="padding-right: 12px; border: none;">96.34</td>
+<td style="padding-right: 12px; border: none;">96.35</td>
+<td style="padding-right: 12px; border: none;">96.44</td>
+<td style="padding-right: 12px; border: none;">96.58</td>
+<td style="padding-right: 12px; border: none;">96.59</td>
+<td style="padding-right: 12px; border: none;">96.61</td>
+<td style="padding-right: 12px; border: none;">96.62</td>
+<td style="padding-right: 12px; border: none;">96.63</td>
+<td style="padding-right: 12px; border: none;">96.67</td>
+<td style="padding-right: 12px; border: none;">96.71</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Delta</td>
+<td style="padding-right: 12px; border: none;">0.00</td>
+<td style="padding-right: 12px; border: none;">0.25</td>
+<td style="padding-right: 12px; border: none;">0.26</td>
+<td style="padding-right: 12px; border: none;">0.70</td>
+<td style="padding-right: 12px; border: none;">1.09</td>
+<td style="padding-right: 12px; border: none;">1.11</td>
+<td style="padding-right: 12px; border: none;">1.21</td>
+<td style="padding-right: 12px; border: none;">1.27</td>
+<td style="padding-right: 12px; border: none;">1.34</td>
+<td style="padding-right: 12px; border: none;">1.43</td>
+<td style="padding-right: 12px; border: none;">1.46</td>
+<td style="padding-right: 12px; border: none;">1.57</td>
+<td style="padding-right: 12px; border: none;">1.58</td>
+<td style="padding-right: 12px; border: none;">1.66</td>
+<td style="padding-right: 12px; border: none;">1.81</td>
+<td style="padding-right: 12px; border: none;">1.82</td>
+<td style="padding-right: 12px; border: none;">1.83</td>
+<td style="padding-right: 12px; border: none;">1.85</td>
+<td style="padding-right: 12px; border: none;">1.85</td>
+<td style="padding-right: 12px; border: none;">1.89</td>
+<td style="padding-right: 12px; border: none;">1.94</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;">Weight</td>
+<td style="padding-right: 12px; border: none;">0.09</td>
+<td style="padding-right: 12px; border: none;">0.08</td>
+<td style="padding-right: 12px; border: none;">0.08</td>
+<td style="padding-right: 12px; border: none;">0.06</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.05</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.04</td>
+<td style="padding-right: 12px; border: none;">0.03</td>
+<td style="padding-right: 12px; border: none;">0.03</td>
+</tr>
+<tr>
+<td style="border-bottom: 2px solid black;">Num. obs.</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+<td style="border-bottom: 2px solid black;">112</td>
+</tr>
+<tr>
+<td style="padding-right: 12px; border: none;" colspan="23"><span style="font-size:0.8em"><sup style="vertical-align: 0px;">***</sup>p &lt; 0.001, <sup style="vertical-align: 0px;">**</sup>p &lt; 0.01, <sup style="vertical-align: 0px;">*</sup>p &lt; 0.05</span></td>
+</tr>
 </table>
-
-</div>
-
-<p class=MsoNormal><span style='mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
-
-</div>
-
-</body>
-
-</html>
