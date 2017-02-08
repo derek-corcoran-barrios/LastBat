@@ -203,6 +203,9 @@ cols <- magma(10)
 
 plot(Occu1.layer.MyYu2$Predicted, colNA="white", main="Occupancy estimation for Yuma Myotis",breaks=brks, lab.breaks=brks, col=cols, zlim=c(0,1))
 
+saveRDS(Occu1.layer.MyYu2$Predicted, "Myyu_Firelayer.rds")
+
+
 library(texreg)
 htmlreg(extract(subset(select.My.Yu2, delta <= 2, recalc.weights = TRUE)), file = "myyu.doc")
 
@@ -243,6 +246,8 @@ Occu1.layer.MyCa<-Occu1.layer.MyCa2
 plot(Occu1.layer.MyCa$Predicted, colNA="white", main="Occupancy estimation for California Bat",breaks=brks, col=cols,lab.breaks=brks, zlim=c(0,1))
 library(texreg)
 htmlreg(extract(subset(select.My.Ca2, delta <= 2, recalc.weights = TRUE)))
+saveRDS(Occu1.layer.MyCa2$Predicted, "Myca_FireLayer.rds")
+
 ```
 
 
@@ -282,6 +287,11 @@ Occu1.layer.MyCi2 <- predict(best2.My.Ci2, type = "state", newdata=Predictors)
 PNF <- readRDS("PNF.rds")
 Occu1.layer.MyCi<-Occu1.layer.MyCi2
 plot(Occu1.layer.MyCi$Predicted*PNF, colNA="white", main="Occupancy estimation for Western Small Footed Myotis",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.MyCi<- Occu1.layer.MyCi$Predicted*PNF
+
+saveRDS(Occu1.layer.MyCi, "Myci_FireLayer.rds")
+
 
 library(texreg)
 htmlreg(extract(subset(select.My.Ci2, delta <= 2, recalc.weights = TRUE)))
@@ -323,6 +333,10 @@ Occu1.layer.MyVo2 <- predict(best2.My.Vo2, type = "state", newdata=Predictors)
 Occu1.layer.MyVo<-Occu1.layer.MyVo2
 plot(Occu1.layer.MyVo$Predicted*PNF, colNA="white", main="Occupancy estimation for Hairy-winged bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
+Occu1.layer.MyVo<- Occu1.layer.MyVo$Predicted*PNF
+
+saveRDS(Occu1.layer.MyVo, "MyVo_FireLayer.rds")
+
 library(texreg)
 htmlreg(extract(subset(select.My.Vo2, delta <= 2, recalc.weights = TRUE)))
 
@@ -363,6 +377,10 @@ library(texreg)
 
 Occu1.layer.MyLu2<-Occu1.layer.MyLu2
 plot(Occu1.layer.MyLu2$Predicted, colNA="white", main="Occupancy estimation for Little Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.MyLu2<- Occu1.layer.MyLu2$Predicted*PNF
+
+saveRDS(Occu1.layer.MyLu2, "MyLu_FireLayer.rds")
 
 htmlreg(extract(subset(select.My.Lu2, delta <= 2, recalc.weights = TRUE)))
 htmlreg(extract(subset(select.My.Lu2, delta <= 0.5, recalc.weights = TRUE)), file = "MYLU.doc")
@@ -406,6 +424,10 @@ Occu1.layer.LaBl2 <- predict(best2.La.Bl2, type = "state", newdata=Predictors)
 Occu1.layer.LaBl2<-Occu1.layer.LaBl2
 plot(Occu1.layer.LaBl2$Predicted*PNF, colNA="white", main="Occupancy estimation for Western Red Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
+Occu1.layer.LaBl2<- Occu1.layer.LaBl2$Predicted*PNF
+
+saveRDS(Occu1.layer.LaBl2, "Labl_FireLayer.rds")
+
 library(texreg)
 htmlreg(extract(subset(select.La.Bl2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -442,6 +464,11 @@ Occu1.layer.MyEv2 <- predict(best2.My.Ev2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 Occu1.layer.MyEv2<-Occu1.layer.MyEv2
 plot(Occu1.layer.MyEv2$Predicted, colNA="white", main="Occupancy estimation for Long Eared Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.MyEv2<- Occu1.layer.MyEv2$Predicted*PNF
+
+saveRDS(Occu1.layer.MyEv2, "Myev_FireLayer.rds")
+
 
 library(texreg)
 htmlreg(extract(subset(select.My.Ev2, delta <= 2, recalc.weights = TRUE)))
@@ -485,6 +512,11 @@ Occu1.layer.AnPa2 <- predict(best2.An.Pa2, type = "state", newdata=Predictors)
 Occu1.layer.AnPa2<-Occu1.layer.AnPa2
 plot(Occu1.layer.AnPa2$Predicted*PNF, colNA="white", main="Occupancy estimation for Pallid Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
+
+Occu1.layer.AnPa2<- Occu1.layer.AnPa2$Predicted*PNF
+
+saveRDS(Occu1.layer.AnPa2, "Anpa_FireLayer.rds")
+
 library(texreg)
 htmlreg(extract(subset(select.An.Pa2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -525,6 +557,10 @@ Occu1.layer.MyTh2 <- predict(best2.My.Th2, type = "state", newdata=Predictors)
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 Occu1.layer.MyTh2<-Occu1.layer.MyTh2
 plot(Occu1.layer.MyTh2$Predicted*PNF, colNA="white", main="Occupancy estimation for Fringed Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.MyTh2<- Occu1.layer.MyTh2$Predicted*PNF
+
+saveRDS(Occu1.layer.MyTh2, "Myth2_FireLayer.rds")
 
 library(texreg)
 htmlreg(extract(subset(select.My.Th2, delta <= 2, recalc.weights = TRUE)))
@@ -568,6 +604,10 @@ Occu1.layer.CoTo2 <- predict(best2.Co.To2, type = "state", newdata=Predictors)
 Occu1.layer.CoTo2<-Occu1.layer.CoTo2
 plot(Occu1.layer.CoTo2$Predicted*PNF, colNA="white", main="Occupancy estimation for Townsend big eared bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
+Occu1.layer.CoTo2<- Occu1.layer.CoTo2$Predicted*PNF
+
+saveRDS(Occu1.layer.CoTo2, "Coto_FireLayer.rds")
+
 
 htmlreg(extract(subset(select.Co.To2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -605,6 +645,10 @@ Occu1.layer.PaHe2 <- predict(best2.Pa.He2, type = "state", newdata=Predictors)
 Occu1.layer.PaHe2<-Occu1.layer.PaHe2
 plot(Occu1.layer.PaHe2$Predicted, colNA="white", main="Occupancy estimation for Pipistrel",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 
+Occu1.layer.PaHe2<- Occu1.layer.PaHe2$Predicted*PNF
+
+saveRDS(Occu1.layer.PaHe2, "Pahe_FireLayer.rds")
+
 library(texreg)
 htmlreg(extract(subset(select.Pa.He2, delta <= 2, recalc.weights = TRUE)))
 ```
@@ -618,243 +662,266 @@ BatOccuEpFu<-BatOccu[,28:30]
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-# SimOccuEpFu2<-unmarkedFrameOccu(y = BatOccuEpFu, siteCovs =sampling.cov, obsCovs=Dailycov)
+ SimOccuEpFu2<-unmarkedFrameOccu(y = BatOccuEpFu, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
-# model.Occu1.Ep.Fu2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEpFu2)
+ model.Occu1.Ep.Fu2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEpFu2)
 # 
-# select.Ep.Fu2 <- dredge(model.Occu1.Ep.Fu2, rank = "AICc")
+select.Ep.Fu2 <- dredge(model.Occu1.Ep.Fu2, rank = "AICc")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.Ep.Fu2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.Ep.Fu2, delta <= 2, recalc.weights = TRUE)))
 # 
-# model.Occu1.Ep.Fu2 <- occu(~ Julian + Meantemp + Meanhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEpFu2)
+model.Occu1.Ep.Fu2 <- occu(~ Julian + Meantemp + Meanhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEpFu2)
 # 
 # 
-# select.Ep.Fu2 <- dredge(model.Occu1.Ep.Fu2, rank = "AICc", subset= !(  
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Julian)` & `p(Meantemp)` & `p(Meanhum)`)
-# 
-# best2.Ep.Fu2<-get.models(select.Ep.Fu2, 1)[[1]]
-# Occu1.layer.EpFu2 <- predict(best2.Ep.Fu2, type = "state", newdata=Predictors)
+select.Ep.Fu2 <- dredge(model.Occu1.Ep.Fu2, rank = "AICc", subset= !( `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Julian)` & `p(Meantemp)` & `p(Meanhum)`)
+ 
+best2.Ep.Fu2<-get.models(select.Ep.Fu2, 1)[[1]]
+Occu1.layer.EpFu2 <- predict(best2.Ep.Fu2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
 # 
-# Occu1.layer.EpFu2<-Occu1.layer.EpFu2
-# plot(Occu1.layer.EpFu2$Predicted, colNA="white", main="Occupancy estimation for Big Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
-# library(texreg)
-# htmlreg(extract(subset(select.Ep.Fu2, delta <= 2, recalc.weights = TRUE)))
+Occu1.layer.EpFu2<-Occu1.layer.EpFu2
+plot(Occu1.layer.EpFu2$Predicted, colNA="white", main="Occupancy estimation for Big Brown Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.EpFu2<- Occu1.layer.EpFu2$Predicted*PNF
+
+saveRDS(Occu1.layer.EpFu2, "Epfu_FireLayer.rds")
+library(texreg)
+htmlreg(extract(subset(select.Ep.Fu2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 ##silver-haired bat (*Lasionycteris noctivagans*)
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-#BatOccuLaNo<-BatOccu[,31:33]
+BatOccuLaNo<-BatOccu[,31:33]
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-# SimOccuLaNo2<-unmarkedFrameOccu(y = BatOccuLaNo, siteCovs =sampling.cov, obsCovs=Dailycov)
+SimOccuLaNo2<-unmarkedFrameOccu(y = BatOccuLaNo, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
-# model.Occu1.La.No2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuLaNo2)
-# 
-# 
-# select.La.No2 <- dredge(model.Occu1.La.No2, rank = "AICc")
-# 
-# library(texreg)
-# htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
-# 
-# model.Occu1.La.No2 <- occu(~ Meantemp + Maxhum ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuLaNo2)
-# 
-# select.La.No2 <- dredge(model.Occu1.La.No2, rank = "AICc", subset= !( 
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)` & `p(Maxhum)`)
+model.Occu1.La.No2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuLaNo2)
 # 
 # 
-# htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
+select.La.No2 <- dredge(model.Occu1.La.No2, rank = "AICc")
 # 
-# best2.La.No2<-get.models(select.La.No2, 1)[[1]]
+library(texreg)
+htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
 # 
-# Occu1.layer.LaNo2 <- predict(best2.La.No2, type = "state", newdata=Predictors)
+model.Occu1.La.No2 <- occu(~ Meantemp + Maxhum ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuLaNo2)
+# 
+select.La.No2 <- dredge(model.Occu1.La.No2, rank = "AICc", subset= !( 
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`)& `p(Meantemp)` & `p(Maxhum)`)
+# 
+# 
+htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
+# 
+best2.La.No2<-get.models(select.La.No2, 1)[[1]]
+# 
+Occu1.layer.LaNo2 <- predict(best2.La.No2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
-# Occu1.layer.LaNo2<-Occu1.layer.LaNo2
-# plot(Occu1.layer.LaNo2$Predicted, colNA="white", main="Occupancy estimation for Silver Haired Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+Occu1.layer.LaNo2<-Occu1.layer.LaNo2
+plot(Occu1.layer.LaNo2$Predicted, colNA="white", main="Occupancy estimation for Silver Haired Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.LaNo2<- Occu1.layer.LaNo2$Predicted*PNF
+
+saveRDS(Occu1.layer.LaNo2, "Lano_FireLayer.rds")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.La.No2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 
 ##Brazilian free-tailed bat (*Tadarida brasiliensis*)
 
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
-#BatOccuTaBr<-BatOccu[,37:39]
+BatOccuTaBr<-BatOccu[,37:39]
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-# SimOccuTaBr2<-unmarkedFrameOccu(y = BatOccuTaBr, siteCovs =sampling.cov, obsCovs=Dailycov)
+SimOccuTaBr2<-unmarkedFrameOccu(y = BatOccuTaBr, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
 # 
-# model.Occu1.Ta.Br2 <-occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1,  SimOccuTaBr2)
+model.Occu1.Ta.Br2 <-occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1,  SimOccuTaBr2)
 # 
-# select.Ta.Br2 <- dredge(model.Occu1.Ta.Br2, rank = "AICc")
+select.Ta.Br2 <- dredge(model.Occu1.Ta.Br2, rank = "AICc")
 # 
-# htmlreg(extract(subset(select.Ta.Br2, delta <= 2, recalc.weights = TRUE)))
-# 
-# 
-# model.Occu1.Ta.Br2 <-occu(~ Meanhum + sdhum + Minhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist,  SimOccuTaBr2)
-# 
-# select.Ta.Br2 <- dredge(model.Occu1.Ta.Br2,rank = "AICc", subset= !(   
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(sdhum)` & `p(Meanhum)`& `p(Minhum)`)
+htmlreg(extract(subset(select.Ta.Br2, delta <= 2, recalc.weights = TRUE)))
 # 
 # 
-# best2.Ta.Br2<-get.models(select.Ta.Br2, 1)[[1]]
-# Occu1.layer.TaBr2 <- predict(best2.Ta.Br2, type = "state", newdata=Predictors)
+model.Occu1.Ta.Br2 <-occu(~ Meanhum + sdhum + Minhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist,  SimOccuTaBr2)
+# 
+select.Ta.Br2 <- dredge(model.Occu1.Ta.Br2,rank = "AICc", subset= !(  `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(sdhum)` & `p(Meanhum)`& `p(Minhum)`)
+# 
+# 
+best2.Ta.Br2<-get.models(select.Ta.Br2, 1)[[1]]
+Occu1.layer.TaBr2 <- predict(best2.Ta.Br2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
-# Occu1.layer.TaBr2<-Occu1.layer.TaBr2
-# plot(Occu1.layer.TaBr2$Predicted, colNA="white", main="Occupancy estimation for Brazilian free-tailed bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+Occu1.layer.TaBr2<-Occu1.layer.TaBr2
+plot(Occu1.layer.TaBr2$Predicted, colNA="white", main="Occupancy estimation for Brazilian free-tailed bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.TaBr2<- Occu1.layer.TaBr2$Predicted*PNF
+
+saveRDS(Occu1.layer.TaBr2, "Tabr_FireLayer.rds")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.Ta.Br2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.Ta.Br2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 
 ##hoary bat (*Lasiurus cinereus*)
 
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
-#BatOccuLaCi<-BatOccu[,40:42]
+BatOccuLaCi<-BatOccu[,40:42]
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-# SimOccuLaCi2<-unmarkedFrameOccu(y = BatOccuLaCi, siteCovs =sampling.cov, obsCovs=Dailycov)
+SimOccuLaCi2<-unmarkedFrameOccu(y = BatOccuLaCi, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
-# model.Occu1.La.Ci2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuLaCi2)
-# 
-# 
-# select.La.Ci2 <- dredge(model.Occu1.La.Ci2, rank = "AICc")
-# 
-# library(texreg)
-# htmlreg(extract(subset(select.La.Ci2, delta <= 2, recalc.weights = TRUE)))
+model.Occu1.La.Ci2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuLaCi2)
 # 
 # 
-# model.Occu1.La.Ci2 <- occu(~  Julian + Meantemp + sdtemp + Minhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuLaCi2)
+select.La.Ci2 <- dredge(model.Occu1.La.Ci2, rank = "AICc")
+# 
+library(texreg)
+htmlreg(extract(subset(select.La.Ci2, delta <= 2, recalc.weights = TRUE)))
 # 
 # 
-# select.La.Ci2 <- dredge(model.Occu1.La.Ci2, rank = "AICc", subset= !( 
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Julian)` & `p(Meantemp)`& `p(sdtemp)`& `p(Minhum)`)
+model.Occu1.La.Ci2 <- occu(~  Julian + Meantemp + sdtemp + Minhum ~  Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuLaCi2)
 # 
 # 
-# best2.La.Ci2<-get.models(select.La.Ci2, 1)[[1]]
-# Occu1.layer.LaCi2 <- predict(best2.La.Ci2, type = "state", newdata=Predictors)
+select.La.Ci2 <- dredge(model.Occu1.La.Ci2, rank = "AICc", subset= !( 
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Julian)` & `p(Meantemp)`& `p(sdtemp)`& `p(Minhum)`)
+# 
+# 
+best2.La.Ci2<-get.models(select.La.Ci2, 1)[[1]]
+Occu1.layer.LaCi2 <- predict(best2.La.Ci2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 
-# Occu1.layer.LaCi2<-Occu1.layer.LaCi2
-# plot(Occu1.layer.LaCi2$Predicted, colNA="white", main="Occupancy estimation for Hoary Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+Occu1.layer.LaCi2<-Occu1.layer.LaCi2
+plot(Occu1.layer.LaCi2$Predicted, colNA="white", main="Occupancy estimation for Hoary Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.LaCi2<- Occu1.layer.LaCi2$Predicted*PNF
+
+saveRDS(Occu1.layer.LaCi2, "Laci_FireLayer.rds")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.La.Ci2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.La.Ci2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 ##Spotted bat (*Euderma maculatum*)
 
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
-#BatOccuEuMa<-BatOccu[,46:48]
+BatOccuEuMa<-BatOccu[,46:48]
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results='hide'}
 #N=49
-# SimOccuEuMa2<-unmarkedFrameOccu(y = BatOccuEuMa, siteCovs =sampling.cov, obsCovs=Dailycov)
+SimOccuEuMa2<-unmarkedFrameOccu(y = BatOccuEuMa, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
-# model.Occu1.Eu.Ma2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEuMa2)
+model.Occu1.Eu.Ma2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEuMa2)
 # 
-# select.Eu.Ma2 <- dredge(model.Occu1.Eu.Ma2, rank = "AICc")
+select.Eu.Ma2 <- dredge(model.Occu1.Eu.Ma2, rank = "AICc")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.Eu.Ma2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.Eu.Ma2, delta <= 2, recalc.weights = TRUE)))
 # 
-# model.Occu1.Eu.Ma2 <- occu(~ Meantemp + Maxtemp + Maxhum ~Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEuMa2)
+model.Occu1.Eu.Ma2 <- occu(~ Meantemp + Maxtemp + Maxhum ~Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEuMa2)
 # 
-# select.Eu.Ma2 <- dredge(model.Occu1.Eu.Ma2, rank = "AICc", subset= !( 
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Meantemp)`& `p(Maxtemp)` & `p(Maxhum)`)
-# 
-# best2.Eu.Ma2<-get.models(select.Eu.Ma2, 1)[[1]]
-# Occu1.layer.EuMa2 <- predict(best2.Eu.Ma2, type = "state", newdata=Predictors)
+select.Eu.Ma2 <- dredge(model.Occu1.Eu.Ma2, rank = "AICc", subset= !( 
+`psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Meantemp)`& `p(Maxtemp)` & `p(Maxhum)`)
+ 
+best2.Eu.Ma2<-get.models(select.Eu.Ma2, 1)[[1]]
+Occu1.layer.EuMa2 <- predict(best2.Eu.Ma2, type = "state", newdata=Predictors)
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results='asis'}
 # 
-# Occu1.layer.EuMa2<-Occu1.layer.EuMa2
-# plot(Occu1.layer.EuMa2$Predicted, colNA="white", main="Occupancy estimation for Spotted Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+Occu1.layer.EuMa2<-Occu1.layer.EuMa2
+plot(Occu1.layer.EuMa2$Predicted, colNA="white", main="Occupancy estimation for Spotted Bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.Eu.Ma2, delta <= 2, recalc.weights = TRUE)))
+
+Occu1.layer.EuMa2<- Occu1.layer.EuMa2$Predicted*PNF
+
+saveRDS(Occu1.layer.EuMa2, "Euma_FireLayer.rds")
+
+library(texreg)
+htmlreg(extract(subset(select.Eu.Ma2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 
 ## western mastiff bat (*Eumops perotis*)
 
 ```{r,echo=FALSE, warning=FALSE,message=FALSE}
-#BatOccuEuPe<-BatOccu[,49:51]
+BatOccuEuPe<-BatOccu[,49:51]
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=TRUE, results="hide"}
 # #N=49
 # 
-# SimOccuEuPe2<-unmarkedFrameOccu(y = BatOccuEuPe, siteCovs =sampling.cov, obsCovs=Dailycov)
+SimOccuEuPe2<-unmarkedFrameOccu(y = BatOccuEuPe, siteCovs =sampling.cov, obsCovs=Dailycov)
 # 
-# model.Occu1.Eu.Pe2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEuPe2)
-# 
-# 
-# select.Eu.Pe2 <- dredge(model.Occu1.Eu.Pe2, rank = "AICc")
-# 
-# #library(texreg)
-# #htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
-# 
-# model.Occu1.Eu.Pe2 <- occu(~ Maxhum + Meanhum + Minhum + sdhum  ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEuPe2)
+model.Occu1.Eu.Pe2 <- occu(~ Julian + Meanhum + Meantemp + sdhum + sdtemp + Maxhum + Maxtemp + Minhum + Mintemp ~  1, SimOccuEuPe2)
 # 
 # 
-# select.Eu.Pe2 <- dredge(model.Occu1.Eu.Pe2, rank = "AICc", subset= !(  
-# `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
-# `psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
-# `psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Minhum)`& `p(sdhum)` & `p(Meanhum)`& `p(Maxhum)`)
+select.Eu.Pe2 <- dredge(model.Occu1.Eu.Pe2, rank = "AICc")
 # 
-# best2.Eu.Pe2<-get.models(select.Eu.Pe2, 1)[[1]]
-# Occu1.layer.EuPe2 <- predict(best2.Eu.Pe2, type = "state", newdata=Predictors)
+library(texreg)
+htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
+# 
+model.Occu1.Eu.Pe2 <- occu(~ Maxhum + Meanhum + Minhum + sdhum  ~ Burn.intensity.Canopy + I(Burn.intensity.Canopy^2) + Burn.intensity.basal + I(Burn.intensity.basal^2) + fire_dist + forest_dist, SimOccuEuPe2)
+# 
+# 
+select.Eu.Pe2 <- dredge(model.Occu1.Eu.Pe2, rank = "AICc", subset= !( `psi(Burn.intensity.Canopy)` && `psi(Burn.intensity.basal)` ||
+`psi(Burn.intensity.Canopy)` && `psi(I(Burn.intensity.basal^2))` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(Burn.intensity.basal)` ||
+`psi(I(Burn.intensity.Canopy^2))` && `psi(I(Burn.intensity.basal^2))`) & `p(Minhum)`& `p(sdhum)` & `p(Meanhum)`& `p(Maxhum)`)
+# 
+best2.Eu.Pe2<-get.models(select.Eu.Pe2, 1)[[1]]
+Occu1.layer.EuPe2 <- predict(best2.Eu.Pe2, type = "state", newdata=Predictors)
+saveRDS(Occu1.layer.EuPe2, "Eupe_Fire.rds")
 ```
 
 ```{r, echo=FALSE, message=FALSE, warning=FALSE, cache=FALSE, results="asis"}
 # 
-# Occu1.layer.EuPe2<-Occu1.layer.EuPe2
-# plot(Occu1.layer.EuPe2$Predicted*PNF, colNA="white", main="Occupancy estimation for western mastiff bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+Occu1.layer.EuPe2<-Occu1.layer.EuPe2
+plot(Occu1.layer.EuPe2$Predicted*PNF, colNA="white", main="Occupancy estimation for western mastiff bat",breaks=brks, col=cols, lab.breaks=brks, zlim=c(0,1))
+
+Occu1.layer.EuPe2<- Occu1.layer.EuPe2$Predicted*PNF
+
+saveRDS(Occu1.layer.EuPe2, "Eupe_FireLayer.rds")
 # 
-# library(texreg)
-# htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
+library(texreg)
+htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
 ```
 
 #Relationships between different species of Bats
@@ -865,10 +932,10 @@ BatOccuEpFu<-BatOccu[,28:30]
 
 ```{r,echo=FALSE, cache=TRUE, fig.width=6, fig.height=6}
 #N=49a
-# FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
-# names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA", "MYTH", "COTO", "PAHE", "EPFU","LANO", "TABR", "LACI", "EUMA", "EUPE")
+FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
+names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA", "MYTH", "COTO", "PAHE", "EPFU","LANO", "TABR", "LACI", "EUMA", "EUPE")
 # 
-# library(viridis)
+library(viridis)
 # levelplot(FireBats, col.regions = magma(99), colorkey = list(space = "bottom"))
 ```
 

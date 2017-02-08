@@ -1,0 +1,73 @@
+---
+title: "Colin Mines"
+author: "Derek Corcoran"
+date: '`r Sys.Date() `'
+output:
+  pdf_document:
+    fig_caption: yes
+---
+
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE,results='hide'}
+library(raster)
+library(rasterVis)
+library(maps)
+library(maptools)
+library(rgdal)
+library(latticeExtra)
+library(dplyr)
+library(knitr)
+library(lubridate)
+library(ggmap)
+library(sp)
+library(xtable)
+```
+
+#Intoduction
+
+A team of interns from the Feather River College and the Plumas Audubon Society lead by biologists Derek Corcoran and Giorgia Graells conducted acoustic monitoring surveys for bats in Plumas National Forest.The overall objective of the study is to generate models to predict the habitat use of bat species in the National Forest with a focus on three species of concern: the Pallid bat (*Antrozous pallidus*, Anpa), Fringed myotis (*Myotis thysanodes*, Myth), and the Townsend's Long-eared bat (*Corynorhinus townsendii*, Coto). Surveys were conducted over the course of 2 years during the summers of 2015 and 2016. Bat surveys included acoustic monitoring only.    
+
+```{r, echo=FALSE, cache=FALSE}
+RESULTS2016 <- read.csv("~/Documents/new_bats/Rnew_bats/RESULTS2016.csv")
+RESULTS2016 <- RESULTS2016[,1:4]
+RESULTS2016$START.DATE <- dmy(RESULTS2016$START.DATE)
+RESULTS2016$YEAR<- as.factor(as.character(year(RESULTS2016$START.DATE)))
+```
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE}
+plumas <- get_map(location = "Quincy, ca", zoom = 9)
+Plumap<- ggmap(plumas)+ scale_x_continuous(limits = c(-121.6945, -120.0407), expand = c(0, 0)) + scale_y_continuous(limits = c(39.36708, 40.31977), expand = c(0, 0))
+```
+
+
+##Mines
+
+
+```{r, echo=FALSE}
+datasp <- read.csv(url("https://raw.githubusercontent.com/derek-corcoran-barrios/LastBat/master/Grandtotal.csv"))
+coord<- data.frame(LONG =datasp$LONG, LAT = datasp$LAT)
+Mines <- filter(datasp, ID == "H1F101" | ID =="H1NF113" | ID == "H1NF114" | ID == "H2NF134"| ID == "H2NF135" | ID == "H2NF136" | ID == "H4F161"  | ID == "H5F178"|ID == "H5F179" | ID == "H5NF187")
+
+MinesSp <- Mines[,2:53]
+
+MinesCord <- Mines[,c(59, 58)]
+```
+
+```{r, echo=FALSE, warning=FALSE, cache=TRUE, message=FALSE, fig.cap="Map showing the sampled points in Mines"}
+
+Plumap<- ggmap(plumas) + geom_point(data = MinesCord, aes(x = LONG, y = LAT), colour= "red") + scale_x_continuous(limits = c((min(MinesCord$LONG)-0.05), (max(MinesCord$LONG))+0.05), expand = c(0, 0)) + scale_y_continuous(limits =  c((min(MinesCord$LAT)-0.05), (max(MinesCord$LAT))+0.051), expand = c(0, 0))
+
+Plumap
+```
+
+```{r, echo=FALSE, results='asis'}
+pres <- data.frame(ID =MinesSp[,1] ,MYYU =rowSums(MinesSp[,2:4], na.rm = TRUE), MYCA = rowSums (MinesSp[,5:7], na.rm = TRUE), MYCI = rowSums (MinesSp[,8:10], na.rm = TRUE), MYVO = rowSums (MinesSp[,11:13], na.rm = TRUE), MYLU = rowSums (MinesSp[,14:16], na.rm = TRUE), PAHE = rowSums (MinesSp[,17:19], na.rm = TRUE), LABO = rowSums (MinesSp[,20:22], na.rm = TRUE), MYEV = rowSums (MinesSp[,23:25], na.rm = TRUE), ANPA = rowSums (MinesSp[,26:28], na.rm = TRUE), EPFU = rowSums (MinesSp[,29:31], na.rm = TRUE), LANO = rowSums (MinesSp[,32:34], na.rm = TRUE), MYTH = rowSums (MinesSp[,35:37], na.rm = TRUE), TABR = rowSums (MinesSp[,38:40], na.rm = TRUE), LACI = rowSums (MinesSp[,41:43], na.rm = TRUE), COTO = rowSums (MinesSp[,44:47], na.rm = TRUE), EUMA = rowSums (MinesSp[,48:50], na.rm = TRUE), EUPE= rowSums (MinesSp[,51:52], na.rm = TRUE))
+pres <- pres[,-1]
+pres <- ifelse(pres == 0, 0 ,1)
+
+
+rownames(pres)<- c("Hazard", "Forbes 2", "Forbes 3", "Union Keystone","Continental", "Peerless", "Plinco", "Perini", "Sly Creek")
+SPPNO <- rowSums(pres)
+pres <- cbind(pres, SPPNO)
+print(xtable(t(pres), digits = 0, caption = "Presences for the sampling within the Mines, the row SPPNO stands for total species found in that site, 1 stands for presence and 0 for absence"), comment=FALSE)
+```

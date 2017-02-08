@@ -1,0 +1,246 @@
+---
+title: "Sampling in Feather River District"
+author: "Derek Corcoran"
+date: '`r Sys.Date() `'
+output:
+  pdf_document:
+    fig_caption: yes
+  word_document: default
+---
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE,results='hide'}
+library(raster)
+library(rasterVis)
+library(maps)
+library(maptools)
+library(rgdal)
+library(latticeExtra)
+library(dplyr)
+library(knitr)
+library(lubridate)
+library(ggmap)
+library(sp)
+library(xtable)
+```
+
+#Intoduction
+
+A team of interns from the Feather River College and the Plumas Audubon Society lead by biologists Derek Corcoran and Giorgia Graells conducted acoustic monitoring surveys for bats in Plumas National Forest. Some of the points were directed towards project areas. In the case of the Feather River District, those Areas where the Axford project area, Challenge Area and Sackets Area, plus four mines. The overall objective of the study is to generate models to predict the habitat use of bat species in the National Forest with a focus on three species of concern: the Pallid bat (*Antrozous pallidus*, Anpa), Fringed myotis (*Myotis thysanodes*, Myth), and the Townsend's Long-eared bat (*Corynorhinus townsendii*, Coto). Surveys were conducted over the course of 2 years during the summers of 2015 and 2016. Bat surveys included acoustic monitoring only.    
+
+```{r, echo=FALSE, cache=FALSE}
+RESULTS2016 <- read.csv("~/Documents/new_bats/Rnew_bats/RESULTS2016.csv")
+RESULTS2016 <- RESULTS2016[,1:4]
+RESULTS2016$START.DATE <- dmy(RESULTS2016$START.DATE)
+RESULTS2016$YEAR<- as.factor(as.character(year(RESULTS2016$START.DATE)))
+```
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE}
+plumas <- get_map(location = "Quincy, ca", zoom = 9)
+Plumap<- ggmap(plumas)+ scale_x_continuous(limits = c(-121.6945, -120.0407), expand = c(0, 0)) + scale_y_continuous(limits = c(39.36708, 40.31977), expand = c(0, 0))
+```
+
+```{r, echo=TRUE, message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE, results='hide'}
+##AXFORD
+
+Axford <- readOGR(dsn="/home/derek/Documents/Missouri post doc/Green Areas",layer="AxfordBoundaryMERGE")
+Axford <- spTransform(Axford, CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+####SACKETS
+
+Sackets <- readOGR(dsn="/home/derek/Documents/Missouri post doc/Green Areas",layer="Sacketts_Boundary_20130905")
+Sackets <- spTransform(Sackets, CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+Sackets2 <- readOGR(dsn="/home/derek/Documents/Missouri post doc/Green Areas",layer="Sacketts_Meadows")
+Sackets <- spTransform(Sackets, CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+Sackets2 <- spTransform(Sackets2, CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+
+####CHALLENGE
+
+Gibson <- readOGR(dsn="/home/derek/Documents/Missouri post doc/Green Areas",layer="BatSurveyBoundary")
+Gibson <- spTransform(Gibson, CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+datasp <- read.csv(url("https://raw.githubusercontent.com/derek-corcoran-barrios/LastBat/master/Grandtotal.csv"))
+coord<- data.frame(LONG =datasp$LONG, LAT = datasp$LAT)
+AXFORD<-fortify(Axford)
+
+SACKETS<-fortify(Sackets)
+
+SACKETS2<-fortify(Sackets2)
+
+
+CHALLENGE<-fortify(Gibson)
+
+```
+
+```{r, cache=TRUE, echo = FALSE, warning=FALSE, fig.cap="Map showing the sampled points and the year it was sampled in the whole Plumas National Forest"}
+RESULTS2016$LONG <- as.numeric(as.character(RESULTS2016$LONG))
+RESULTS2016$LAT <- as.numeric(as.character(RESULTS2016$LAT))
+Plumap  + geom_point(aes(x = LONG, y = LAT, colour=YEAR, label=ID), data = RESULTS2016, size = 3, alpha = 0.5)+ scale_colour_manual(name="",  values =c("yellow", "red"))
+```
+
+#Methods
+
+Ten Pettersson D500X Bat detectors and accompanying SonoBat 3.2.1 West software were used to capture and identify bat species using the ultrasonic echolocation calls bats make to navigate and find prey. The detectors were deployed at 125 locations in the Plumas National Forest (Figure 1). Among those sites were selected at random within each project area. The bat detectors were set up to capture data for three nights at each location being turn on at 7:30 pm and of at 6:30 am on each day. Microphones were set approximately 3 meters from the ground, at a 90 degree angle in order to improve the probability to detect Pallid Bats which usually fly at altitudes of 2 meters attached to a ¾ inch steel pipe. 
+
+SonoBat uses a decision engine based on the quantitative analysis of approximately 10,000 recordings with known species from across North America. Ultrasonic sound recorded by the detector runs through a process which makes informed decisions based on the analysis of each call. 
+
+#Results 
+
+##Axford
+
+Four random points were selected within the Axford project area, this are shown in Figures 2. In table 1, we can see that in all four sites bats were detected, with a minimum of 2 species detected and a maximum of 6 in site H2NF127. A total of 7 Species were detected within the area (Myyu, Myca, Myev, Epfu, Myth, Tabr and Laci). It is important to notice that Fringed Myotis (*Myotis thysanoides*) was found within the area in site H2NF127.
+
+```{r, echo=TRUE, , message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE}
+
+plumas <- get_map(location = "Quincy, ca", zoom = 9)
+```
+
+```{r, echo=FALSE, warning=FALSE, cache=TRUE, message=FALSE, fig.cap="Map showing the four sampled points in the the Axford project area, shown in grey"}
+
+
+dat_2 <- SpatialPointsDataFrame(datasp[,c("LONG", "LAT")], datasp[,c(2:53,58:61)],
+                               proj4string = CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+
+
+coord2 <- dat_2[Axford, ]
+
+df<-coord2@data
+
+df$START.DATE <- ymd(df$START.DATE)
+df$YEAR<- as.factor(as.character(year(df$START.DATE)))
+
+Plumap<- ggmap(plumas) + geom_polygon(aes(x=long, y=lat, group=group), fill='grey', size=1,color='black', data=AXFORD, alpha=0.5) + geom_point(data = df, aes(x = LONG, y = LAT), colour= "red") + scale_x_continuous(limits = c(-121.3, -121.15), expand = c(0, 0)) + scale_y_continuous(limits = c(39.72, 39.85), expand = c(0, 0))
+
+Plumap
+
+```
+
+```{r, echo=FALSE, results='asis'}
+pres <- data.frame(ID =df[,1] ,MYYU =rowSums(df[,2:4]), MYCA = rowSums (df[,5:7]), MYCI = rowSums (df[,8:10]), MYVO = rowSums (df[,11:13]), MYLU = rowSums (df[,14:16]), PAHE = rowSums (df[,17:19]), LABO = rowSums (df[,20:22]), MYEV = rowSums (df[,23:25]), ANPA = rowSums (df[,26:28]), EPFU = rowSums (df[,29:31]), LANO = rowSums (df[,32:34]), MYTH = rowSums (df[,35:37]), TABR = rowSums (df[,38:40]), LACI = rowSums (df[,41:43]), COTO = rowSums (df[,44:47]), EUMA = rowSums (df[,48:50]), EUPE= rowSums (df[,51:52]))
+pres <- pres[,-1]
+pres <- ifelse(pres == 0, 0 ,1)
+
+rownames(pres)<- df[,1]
+SPPNO <- rowSums(pres)
+pres <- cbind(pres, SPPNO)
+print(xtable(t(pres), digits = 0, caption = "Presences for the sampling within the Axford Area, the row SPPNO stands for total species found in that site, 1 stands for presence and 0 for absence"), comment=FALSE)
+```
+
+##Sackets
+
+Seven random points were selected within the Sackets project area, this are shown in Figures 3. In table 2, we can see that in all four sites bats were detected, with a minimum of 3 species detected and a maximum of 6 in sites H2NF138, H2NF141 and H2NF142. A total of 9 Species were detected within the area. It is important to notice that Fringed Myotis (*Myotis thysanoides*) was found within the area in site H2NF139.
+
+```{r, echo=TRUE, , message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE}
+
+plumas <- get_map(location = "Quincy, ca", zoom = 9)
+```
+
+```{r, echo=FALSE, warning=FALSE, cache=TRUE, message=FALSE, fig.cap="Map showing the seven sampled points in the the Sackets project area, shown in grey"}
+
+
+dat_2 <- SpatialPointsDataFrame(datasp[,c("LONG", "LAT")], datasp[,c(2:53,58:61)],
+                               proj4string = CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+
+
+coord2 <- dat_2[Sackets, ]
+coord3 <- dat_2[Sackets2, ]
+
+df<-coord2@data
+df2<-coord3@data
+
+df <- rbind(df, df2)
+
+df$START.DATE <- ymd(df$START.DATE)
+df$YEAR<- as.factor(as.character(year(df$START.DATE)))
+
+Plumap<- ggmap(plumas) + geom_polygon(aes(x=long, y=lat, group=group), fill='grey', size=1,color='black', data=SACKETS, alpha=0.5) + geom_polygon(aes(x=long, y=lat, group=group), fill='grey', size=1,color='black', data=SACKETS2, alpha=0.5) + geom_point(data = df, aes(x = LONG, y = LAT), colour= "red") + scale_x_continuous(limits = c(-120.95, -120.82), expand = c(0, 0)) + scale_y_continuous(limits = c(39.7, 39.8), expand = c(0, 0))
+
+Plumap
+
+```
+
+```{r, echo=FALSE, results='asis'}
+pres <- data.frame(ID =df[,1] ,MYYU =rowSums(df[,2:4]), MYCA = rowSums (df[,5:7]), MYCI = rowSums (df[,8:10]), MYVO = rowSums (df[,11:13]), MYLU = rowSums (df[,14:16]), PAHE = rowSums (df[,17:19]), LABO = rowSums (df[,20:22]), MYEV = rowSums (df[,23:25]), ANPA = rowSums (df[,26:28]), EPFU = rowSums (df[,29:31]), LANO = rowSums (df[,32:34]), MYTH = rowSums (df[,35:37]), TABR = rowSums (df[,38:40]), LACI = rowSums (df[,41:43]), COTO = rowSums (df[,44:47]), EUMA = rowSums (df[,48:50]), EUPE= rowSums (df[,51:52]))
+pres <- pres[,-1]
+pres <- ifelse(pres == 0, 0 ,1)
+
+rownames(pres)<- df[,1]
+SPPNO <- rowSums(pres)
+pres <- cbind(pres, SPPNO)
+print(xtable(t(pres), digits = 0, caption = "Presences for the sampling within the Sackets Area, the row SPPNO stands for total species found in that site, 1 stands for presence and 0 for absence"), comment=FALSE)
+```
+
+##Challenge
+
+Five random points were selected within the Challenge area, this are shown in Figure 4. In table 3, we can see that in four of the five sites bats were detected, with a minimum of 1 species detected and a maximum of 4 in site H5NF184. A total of 4 Species were detected within the area (Myyu, Myca, Mylu and Laci).
+
+```{r, echo=TRUE, , message=FALSE, warning=FALSE, echo=FALSE, cache=TRUE}
+
+plumas <- get_map(location = "Quincy, ca", zoom = 9)
+```
+
+```{r, echo=FALSE, warning=FALSE, cache=TRUE, message=FALSE, fig.cap="Map showing the Five sampled points in the Challenge project area, shown in grey"}
+
+
+dat_2 <- SpatialPointsDataFrame(datasp[,c("LONG", "LAT")], datasp[,c(2:53,58:61)],
+                               proj4string = CRS("+proj=longlat +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +no_defs"))
+
+
+
+coord2 <- dat_2[Gibson, ]
+
+df<-coord2@data
+
+df$START.DATE <- ymd(df$START.DATE)
+df$YEAR<- as.factor(as.character(year(df$START.DATE)))
+
+Plumap<- ggmap(plumas) + geom_polygon(aes(x=long, y=lat, group=group), fill='grey', size=1,color='black', data=CHALLENGE, alpha=0.5) + geom_point(data = df, aes(x = LONG, y = LAT), colour= "red") + scale_x_continuous(limits = c(-121.3, -121.15), expand = c(0, 0)) + scale_y_continuous(limits = c(39.4, 39.6), expand = c(0, 0))
+
+Plumap
+
+```
+
+
+```{r, echo=FALSE, results='asis'}
+pres <- data.frame(ID =df[,1] ,MYYU =rowSums(df[,2:4]), MYCA = rowSums (df[,5:7]), MYCI = rowSums (df[,8:10]), MYVO = rowSums (df[,11:13]), MYLU = rowSums (df[,14:16]), PAHE = rowSums (df[,17:19]), LABO = rowSums (df[,20:22]), MYEV = rowSums (df[,23:25]), ANPA = rowSums (df[,26:28]), EPFU = rowSums (df[,29:31]), LANO = rowSums (df[,32:34]), MYTH = rowSums (df[,35:37]), TABR = rowSums (df[,38:40]), LACI = rowSums (df[,41:43]), COTO = rowSums (df[,44:47]), EUMA = rowSums (df[,48:50]), EUPE= rowSums (df[,51:52]))
+pres <- pres[,-1]
+pres <- ifelse(pres == 0, 0 ,1)
+
+rownames(pres)<- df[,1]
+SPPNO <- rowSums(pres)
+pres <- cbind(pres, SPPNO)
+print(xtable(t(pres), digits = 0, caption = "Presences for the sampling within the Challenge Area, the row SPPNO stands for total species found in that site, 1 stands for presence and 0 for absence"), comment=FALSE)
+```
+
+##Mines
+
+Five mines where sampled, as shown in Figure 5. In table 4 we can see that species were detected in every mine, with a minimum of 1 species and a maximum of 3 in Union Keystone. A total of 5 species were detected (Myyu, Myca, Myev, Lano and Laci) 
+
+```{r, echo=FALSE}
+
+Mines <- filter(datasp, ID == "H1F101" | ID =="H1NF113" | ID == "H1NF114" | ID == "H2NF134"| ID == "H2NF135" | ID == "H2NF136"  | ID == "H5F178"|ID == "H5F179" | ID == "H5NF187")
+
+MinesSp <- Mines[,2:53]
+
+MinesCord <- Mines[,c(59, 58)]
+```
+
+```{r, echo=FALSE, warning=FALSE, cache=TRUE, message=FALSE, fig.cap="Map showing the sampled points in Mines"}
+
+Plumap<- ggmap(plumas) + geom_point(data = MinesCord, aes(x = LONG, y = LAT), colour= "red") + scale_x_continuous(limits = c((min(MinesCord$LONG)-0.05), (max(MinesCord$LONG))+0.05), expand = c(0, 0)) + scale_y_continuous(limits =  c((min(MinesCord$LAT)-0.05), (max(MinesCord$LAT))+0.051), expand = c(0, 0))
+
+Plumap
+```
+
+```{r, echo=FALSE, results='asis'}
+pres <- data.frame(ID =MinesSp[,1] ,MYYU =rowSums(MinesSp[,2:4]), MYCA = rowSums (MinesSp[,5:7]), MYCI = rowSums (MinesSp[,8:10]), MYVO = rowSums (MinesSp[,11:13]), MYLU = rowSums (MinesSp[,14:16]), PAHE = rowSums (MinesSp[,17:19]), LABO = rowSums (MinesSp[,20:22]), MYEV = rowSums (MinesSp[,23:25]), ANPA = rowSums (MinesSp[,26:28]), EPFU = rowSums (MinesSp[,29:31]), LANO = rowSums (MinesSp[,32:34]), MYTH = rowSums (MinesSp[,35:37]), TABR = rowSums (MinesSp[,38:40]), LACI = rowSums (MinesSp[,41:43]), COTO = rowSums (MinesSp[,44:47]), EUMA = rowSums (MinesSp[,48:50]), EUPE= rowSums (MinesSp[,51:52]))
+pres <- pres[,-1]
+pres <- ifelse(pres == 0, 0 ,1)
+
+rownames(pres)<- c("Forbes 2", "Forbes 3", "Union Keystone", "Continental", "Sly Creek")
+SPPNO <- rowSums(pres)
+pres <- cbind(pres, SPPNO)
+print(xtable(t(pres), digits = 0, caption = "Presences for the sampling within the Mines, the row SPPNO stands for total species found in that site, 1 stands for presence and 0 for absence"), comment=FALSE)
+```

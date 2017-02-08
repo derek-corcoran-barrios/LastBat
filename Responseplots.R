@@ -467,3 +467,32 @@ grid.arrange(mycifireresp, anpafireresp, lanofireresp, mylufireresp, tabrfireres
 grid.arrange(tabrfireresp, myyufireresp, mylufireresp, mycifireresp, a, eupefireresp, anpafireresp, grid.text("SOMETHING NICE AND BIG",gp=gpar(fontsize=20, col="red"), x = 0.5, y =0.2), top = "title", ncol = 3)
 
 
+####3d plot
+
+output$fire_dist <- 0
+
+output$Burn.intensity.Canopy <-seq(from = min(sampling.cov$Burn.intensity.Canopy, na.rm = TRUE), to = max(sampling.cov$Burn.intensity.Canopy, na.rm = TRUE), length.out = 65)
+
+output$Burn.intensity.basal <-seq(from = min(sampling.cov$Burn.intensity.basal, na.rm = TRUE), to = max(sampling.cov$Burn.intensity.basal, na.rm = TRUE), length.out = 65)
+
+output$forest_dist <- seq(from = min(sampling.cov$forest_dist, na.rm = TRUE), to = max(sampling.cov$forest_dist, na.rm = TRUE), length.out = 65)
+
+prepuff <- expand.grid(output$forest_dist, output$Burn.intensity.Canopy)
+
+colnames(prepuff) <- c("forest_dist", "Burn.intensity.Canopy")
+
+
+outpuff <- predict(preprocov, output)
+
+puff <- expand.grid(outpuff$forest_dist, outpuff$Burn.intensity.Canopy)
+
+colnames(puff) <- c("forest_dist", "Burn.intensity.Canopy")
+
+puffier <- predict(best2.My.Lu2, type = "state", puff)$Predicted
+
+puffier <- cbind(puffier, prepuff)
+
+colnames(puffier) <- c("Occupancy","forest_dist", "Burn.intensity.Canopy")
+
+
+wireframe(Occupancy ~ exp(forest_dist) + Burn.intensity.Canopy, data = puffier, zlab = "Occupancy", ylab = "Burn Intensity", xlab = "Distance to edge", screen = list(z = 20, x = -70, y = 3))

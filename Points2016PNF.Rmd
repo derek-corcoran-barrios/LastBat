@@ -1,0 +1,66 @@
+```{r, message=FALSE, warning=FALSE, echo=FALSE,results='hide'}
+#first load libraries
+library(raster)
+library(rasterVis)
+library(maps)
+library(maptools)
+library(rgdal)
+library(latticeExtra)
+library(dplyr)
+library(knitr)
+library(unmarked)
+library(lubridate)
+library(jpeg)
+library(stargazer)
+library(xtable)
+library(MuMIn)
+library(ggplot2)
+library(RCurl)
+library(foreign)
+library(gdistance)
+library(spatstat)
+library(plotKML)
+library(rgeos)
+```
+
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE, results='hide', cache=TRUE}
+#read rasters
+
+Grandtotal <- read.csv("~/LastBat/Grandtotal.csv")
+Grandtotal <- Grandtotal[,-1]
+
+Grandtotal <- Grandtotal[,c(58,57,2:52)]
+
+pres <- data.frame(MYYU =rowSums(Grandtotal[,3:5], na.rm = TRUE), MYCA = rowSums (Grandtotal[,6:8], na.rm = TRUE), MYCI = rowSums (Grandtotal[,9:11], na.rm = TRUE), MYVO = rowSums (Grandtotal[,12:14], na.rm = TRUE), MYLU = rowSums (Grandtotal[,15:17], na.rm = TRUE), PAHE = rowSums (Grandtotal[,18:20], na.rm = TRUE), LABO = rowSums (Grandtotal[,21:23], na.rm = TRUE), MYEV = rowSums (Grandtotal[,24:26], na.rm = TRUE), ANPA = rowSums (Grandtotal[,27:29], na.rm = TRUE), EPFU = rowSums (Grandtotal[,30:32], na.rm = TRUE), LANO = rowSums (Grandtotal[,33:35], na.rm = TRUE), MYTH = rowSums (Grandtotal[,36:38], na.rm = TRUE), TABR = rowSums (Grandtotal[,39:41], na.rm = TRUE), LACI = rowSums (Grandtotal[,42:44], na.rm = TRUE), COTO = rowSums (Grandtotal[,45:47], na.rm = TRUE), EUMA = rowSums (Grandtotal[,48:50], na.rm = TRUE), EUPE= rowSums (Grandtotal[,51:53], na.rm = TRUE))
+pres <- ifelse(pres == 0, 0 ,1)
+
+Grandtotal <- cbind(Grandtotal[,1:2], pres)
+```
+
+
+
+```{r, echo=TRUE, warning=FALSE, echo=FALSE, cache=FALSE}
+
+SampleSites <- Grandtotal
+
+
+write.csv(SampleSites, "SampleSites.csv")
+```
+
+```{r, echo=TRUE, warning=FALSE, echo=FALSE, cache=FALSE}
+library(sp)
+coordinates(SampleSites) <- cbind(SampleSites$LONG, SampleSites$LAT)
+proj4string(SampleSites) <- CRS("+proj=longlat +datum=WGS84 +towgs84=0,0,0")
+
+str(SampleSites)
+
+library(maptools)
+
+writeSpatialShape(SampleSites, "SampleSites")
+```
+
+
+```{r}
+writeOGR(SampleSites, dsn = getwd(), layer ="SampleSites2", driver="ESRI Shapefile")
+```

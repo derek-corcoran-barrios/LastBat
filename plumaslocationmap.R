@@ -32,7 +32,7 @@ crs(PNF) <- " +proj=longlat +ellps=WGS84"
 
 map('state', fill = FALSE, xlim = c(-125, -114), ylim = c(32.2, 42.5), xlab = "lon", ylab = "lat")
 map.axes(cex.axis=1)
-plot(PNF, add = TRUE, col = "grey", legend = FALSE)
+#plot(PNF, add = TRUE, col = "grey", legend = FALSE)
 map.scale(x=-124, y=34, ratio=FALSE, relwidth=0.3)
 library(GISTools)  
 north.arrow(xb=-116, yb=41, len=0.22, lab="N")  
@@ -47,5 +47,30 @@ fgdb = "C:/Users/corcoranbarriosd/Desktop/SNV_Raster.gdb"
 subset(ogrDrivers(), grepl("GDB", name))
 fc_list = ogrListLayers(fgdb)
 print(fc_list)
+
+
+#####Final map
+
+library(maps)
+library(GISTools) 
+
+map('state', fill = FALSE, xlim = c(-125, -114), ylim = c(32.2, 42.5), xlab = "lon", ylab = "lat")
+map.axes(cex.axis=0.8)
+
+
+maps::map.scale(x=-124.6, y=34, ratio=FALSE, relwidth=0.3, cex = 0.8)
+north.arrow(xb=-116, yb=41, len=0.22, lab="N") 
+#points(-120.8676, 39.84342, pch = 21, bg = "black")
+library(raster)
+PNF <- readRDS("PNF.rds")
+#crs(PNF) <- " +proj=longlat +ellps=WGS84" 
+plot(PNF, add = TRUE, col = "grey", legend = FALSE)
+# Inmap
+par(usr=c(-216, -10, 0, 144))
+#par(usr=c(-216, -63, 22, 144))
+rect(xleft =-126.2,ybottom = 23.8,xright = -65.5,ytop = 50.6,col = "white")
+map("usa", xlim=c(-126.2,-65.5), ylim=c(23.8,50.6),add=T)
+map("state", add = T)
+map("state", region = "california", fill = T, add = T)
 
 
