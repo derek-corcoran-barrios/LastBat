@@ -932,10 +932,10 @@ htmlreg(extract(subset(select.Eu.Pe2, delta <= 2, recalc.weights = TRUE)))
 
 ```{r,echo=FALSE, cache=TRUE, fig.width=6, fig.height=6}
 #N=49a
-FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
-names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA", "MYTH", "COTO", "PAHE", "EPFU","LANO", "TABR", "LACI", "EUMA", "EUPE")
+#FireBats<-stack(Occu1.layer.MyYu2$Predicted, Occu1.layer.MyCa2$Predicted*PNF, Occu1.layer.MyCi2$Predicted*PNF,Occu1.layer.MyVo2$Predicted*PNF,Occu1.layer.MyLu2$Predicted*PNF, Occu1.layer.LaBl2$Predicted*PNF, Occu1.layer.MyEv2$Predicted*PNF,Occu1.layer.AnPa2$Predicted*PNF, Occu1.layer.MyTh2$Predicted*PNF, Occu1.layer.CoTo2$Predicted*PNF, Occu1.layer.PaHe2$Predicted*PNF, Occu1.layer.EpFu2$Predicted*PNF, Occu1.layer.LaNo2$Predicted*PNF, Occu1.layer.TaBr2$Predicted*PNF, Occu1.layer.LaCi2$Predicted*PNF, Occu1.layer.EuMa2$Predicted*PNF,Occu1.layer.EuPe2$Predicted*PNF)
+#names(FireBats)<-c("MYYU", "MYCA","MYCI", "MYVO" ,"MYLU", "LABL","MYEV" ,"ANPA", "MYTH", "COTO", "PAHE", "EPFU","LANO", "TABR", "LACI", "EUMA", "EUPE")
 # 
-library(viridis)
+#library(viridis)
 # levelplot(FireBats, col.regions = magma(99), colorkey = list(space = "bottom"))
 ```
 
